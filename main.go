@@ -19,7 +19,7 @@ func randSeq(n int) string {
 func main() {
     rand.Seed(time.Now().UnixNano())
 
-	for i := 1; i <= 100; i++ {
-		fmt.Print(randSeq(30)+"\n")
+	for i := 1; i <= 300; i++ {
+		fmt.Print(randSeq(80)+"\n")
 	}
 }
