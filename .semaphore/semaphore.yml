@@ -5,7 +5,7 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Build & run
+  - name: Build & run only on something
     task:
       jobs:
         - name: Tests
