@@ -1,15 +1,15 @@
-version: "v1.0"
+version: v1.0
 name: Pipeline
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: "Build & run"
+  - name: Build & run
     task:
       jobs:
-      - name: Tests
-        commands:
-          - checkout
-          - go run ./main.go
-          - cat file
+        - name: Tests
+          commands:
+            - checkout
+            - go run ./main.go
+            - cat file
