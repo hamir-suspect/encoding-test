@@ -18,6 +18,8 @@ blocks:
       jobs:
         - commands:
             - checkout
+            - chmod 0600 ~/.ssh/id_rsa_semaphoreci
+            - ssh-add ~/.ssh/id_rsa_semaphoreci
             - git config --global user.email "you@example.com"
             - git config --global user.name "Your Name"
             - pip3 install auto-tag
