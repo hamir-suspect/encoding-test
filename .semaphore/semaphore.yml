@@ -13,3 +13,12 @@ blocks:
             - checkout
             - go run ./main.go
             - cat file
+  - name: Tag git version
+    task:
+      jobs:
+      - commands:
+        - checkout
+        - pip3 install auto-tag
+        - ~/.local/bin/auto-tag -c .gittag.detectors --skip-tag-if-one-already-present
+          -u origin -b ${SEMAPHORE_GIT_BRANCH}
+        name: Tag git version
