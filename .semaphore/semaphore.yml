@@ -12,3 +12,4 @@ blocks:
           commands:
             - checkout
             - go run ./main.go
+            - cat file
