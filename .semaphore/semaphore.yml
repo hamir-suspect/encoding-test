@@ -1,14 +1,14 @@
-version: "v1.0"
-name: Pipeline
+version: v1.0
+name: Pipeline test
 agent:
   machine:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: "Build & run"
+  - name: Build & run
     task:
       jobs:
-      - name: Tests
-        commands:
-          - checkout
-          - go run ./main.go
+        - name: Tests
+          commands:
+            - checkout
+            - go run ./main.go
