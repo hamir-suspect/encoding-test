@@ -27,6 +27,4 @@ func main() {
 	for i := 1; i <= 300; i++ {
 		fmt.Print(randSeq(80))
 	}
-    fmt.Println()
-
 }

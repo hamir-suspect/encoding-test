@@ -1,0 +1,62 @@
+bundle exec rake integrations:ruby:install
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Running command (lib/tasks/integrations.rake:3:in `block (2 levels) in <top (required)>'):
+[33m[DEPRECATED] `Bundler.with_clean_env` has been deprecated in favor of `Bundler.with_unbundled_env`. If you instead want the environment before bundler was originally loaded, use `Bundler.with_original_env` (called at /home/appsignal/appsignal-agent/lib/cli.rb:13)[0m
++ rm -rf /tmp/appsignal
+Running command (lib/tasks/integrations.rake:49:in `block (3 levels) in <top (required)>'):
++ cd ./integrations/appsignal-ruby/ext
++ rm -f Makefile appsignal-agent appsignal.h appsignal.version appsignal_extension.bundle appsignal_extension.o appsignal_extension.so appsignal_extension.dylib libappsignal*
+DEBUG `build_release_if`: Not building release. Should already be built.
+Running command (lib/tasks/integrations.rake:130:in `copy_extension_files_to'):
++ rm -f integrations/appsignal-ruby/ext/appsignal.h
++ cp appsignal.h integrations/appsignal-ruby/ext
++ cp release/x86_64-unknown-linux-gnu/release/appsignal.version release/x86_64-unknown-linux-gnu/release/libappsignal.a release/x86_64-unknown-linux-gnu/release/appsignal-agent integrations/appsignal-ruby/ext
++ chmod 0755 integrations/appsignal-ruby/ext/appsignal-agent
+Running command (lib/tasks/integrations.rake:25:in `block (4 levels) in <top (required)>'):
++ ruby extconf.rb
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Running command (lib/tasks/integrations.rake:26:in `block (4 levels) in <top (required)>'):
++ make clean
+Running command (lib/tasks/integrations.rake:27:in `block (4 levels) in <top (required)>'):
++ make
+OK
+{"result":{"status":"success"},"language":{"name":"ruby","version":"2.7.1-p83","implementation":"ruby"},"download":{"checksum":"unverified","http_proxy":null},"build":{"time":"2022-06-24 08:34:53 UTC","package_path":"/home/appsignal/appsignal-agent/integrations/appsignal-ruby","architecture":"x86_64","target":"linux","musl_override":false,"linux_arm_override":false,"dependencies":{"pthread":"linked","dl":"linked"},"flags":{"LDFLAGS":"-L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector-strong -rdynamic -Wl,-export-dynamic -static-libgcc"},"library_type":"static","source":"local"},"host":{"root_user":false,"dependencies":{"libc":"2.23"}}}Running 'integration' test suite with RSpec...
+Running RSpec test suite 4/4
+LANGUAGE=ruby rake "knapsack:rspec[--profile]"
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/json_pure-1.8.1/lib/json/common.rb:155: warning: Using the last argument as keyword parameters is deprecated
+
+Report specs:
+spec/integration/push_api_spec.rb
+spec/integration/host_metrics_collection_spec.rb
+spec/integration/daemons_spec.rb
+spec/integration/logger_spec.rb
+spec/integration/statsd_spec.rb
+
+Leftover specs:
+spec/integration/opentelemetry_spec.rb
+
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
