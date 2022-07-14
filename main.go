@@ -20,6 +20,12 @@ func main() {
     rand.Seed(time.Now().UnixNano())
 
 	for i := 1; i <= 300; i++ {
-		fmt.Print(randSeq(80)+"\\n\n\n")
+		fmt.Print(randSeq(80))
 	}
+    fmt.Print("\n\r\r\n")
+
+	for i := 1; i <= 300; i++ {
+		fmt.Print(randSeq(80))
+	}
+
 }
