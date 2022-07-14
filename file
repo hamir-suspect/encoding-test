@@ -1,3 +1,1663 @@
+Setting up image pull credentials
+Setting up credentials for DockerHub
+echo $DOCKERHUB_PASSWORD | docker login --username $DOCKERHUB_USERNAME --password-stdin
+WARNING! Your password will be stored unencrypted in /home/semaphore/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+
+Pulling docker images...
+Creating network "tmp_default" with the default driver
+
+Pulling main (appsignal/agent-test:0.0.42)...
+
+[2K
+0.0.42: Pulling from appsignal/agent-test
+
+
+
+
+[1A[2K
+58690f9b18fc: Pulling fs layer
+[1B
+
+[1A[2K
+b51569e7c507: Pulling fs layer
+[1B
+
+[1A[2K
+da8ef40b9eca: Pulling fs layer
+[1B
+
+[1A[2K
+fb15d46c38dc: Pulling fs layer
+[1B
+
+[1A[2K
+56e743b93cb5: Pulling fs layer
+[1B
+
+[1A[2K
+717a1c6f6f5f: Pulling fs layer
+[1B
+
+[1A[2K
+44dae81cd598: Pulling fs layer
+[1B
+
+[1A[2K
+b57a13b106fe: Pulling fs layer
+[1B
+
+[1A[2K
+a87e429dd76b: Pulling fs layer
+[1B
+
+[1A[2K
+c5951ecb0a84: Pulling fs layer
+[1B
+
+[1A[2K
+afa3fec65bab: Pulling fs layer
+[1B
+
+[1A[2K
+86b1770092fb: Pulling fs layer
+[1B
+
+[1A[2K
+4cc5dd1fa0d1: Pulling fs layer
+[1B
+
+[1A[2K
+6f4fa2bbede2: Pulling fs layer
+[1B
+
+[1A[2K
+4f4fb700ef54: Pulling fs layer
+[1B
+
+[1A[2K
+b710aa037dda: Pulling fs layer
+[1B
+
+[1A[2K
+4405df13a743: Pulling fs layer
+[1B
+
+[1A[2K
+8479916956da: Pulling fs layer
+[1B[15A[2K
+fb15d46c38dc: Waiting
+[15B[14A[2K
+56e743b93cb5: Waiting
+[14B[13A[2K
+717a1c6f6f5f: Waiting
+[13B[12A[2K
+44dae81cd598: Waiting
+[12B[11A[2K
+b57a13b106fe: Waiting
+[11B[10A[2K
+a87e429dd76b: Waiting
+[10B[9A[2K
+c5951ecb0a84: Waiting
+[9B[8A[2K
+afa3fec65bab: Waiting
+[8B[7A[2K
+86b1770092fb: Waiting
+[7B[6A[2K
+4cc5dd1fa0d1: Waiting
+[6B[5A[2K
+6f4fa2bbede2: Waiting
+[5B[4A[2K
+4f4fb700ef54: Waiting
+[4B[3A[2K
+b710aa037dda: Waiting
+[3B[2A[2K
+4405df13a743: Waiting
+[2B[1A[2K
+8479916956da: Waiting
+[1B[17A[2K
+b51569e7c507: Downloading [======================================>            ]     659B/857B
+[17B[17A[2K
+b51569e7c507: Downloading [==================================================>]     857B/857B
+[17B[17A[2K
+b51569e7c507: Download complete
+[17B[16A[2K
+da8ef40b9eca: Downloading [==================================================>]     528B/528B
+[16B[16A[2K
+da8ef40b9eca: Verifying Checksum
+[16B[16A[2K
+da8ef40b9eca: Download complete
+[16B[18A[2K
+58690f9b18fc: Downloading [>                                                  ]  475.1kB/46.5MB
+[18B[18A[2K
+58690f9b18fc: Downloading [=========>                                         ]  8.997MB/46.5MB
+[18B[18A[2K
+58690f9b18fc: Downloading [================>                                  ]   15.6MB/46.5MB
+[18B[18A[2K
+58690f9b18fc: Downloading [=========================>                         ]  23.62MB/46.5MB
+[18B[18A[2K
+58690f9b18fc: Downloading [=====================================>             ]  34.46MB/46.5MB
+[18B[15A[2K
+fb15d46c38dc: Downloading [==================================================>]     170B/170B
+[15B[15A[2K
+fb15d46c38dc: Verifying Checksum
+[15B[15A[2K
+fb15d46c38dc: Download complete
+[15B[18A[2K
+58690f9b18fc: Verifying Checksum
+[18B[18A[2K
+58690f9b18fc: Download complete
+[18B[14A[2K
+56e743b93cb5: Downloading [>                                                  ]    539kB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [>                                                  ]  491.5kB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [===>                                               ]  11.27MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [===>                                               ]  3.441MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [======>                                            ]  20.43MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [=====>                                             ]  4.915MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [==========>                                        ]  30.58MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [========>                                          ]  8.356MB/46.5MB
+[18B[13A[2K
+717a1c6f6f5f: Downloading [==================================================>]     482B/482B
+[13B[13A[2K
+717a1c6f6f5f: Verifying Checksum
+[13B[13A[2K
+717a1c6f6f5f: Download complete
+[13B[14A[2K
+56e743b93cb5: Downloading [=============>                                     ]  39.12MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [============>                                      ]   11.8MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [================>                                  ]  48.77MB/148.1MB
+[14B[12A[2K
+44dae81cd598: Downloading [>                                                  ]  526.7kB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [==============>                                    ]  13.76MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [===================>                               ]   57.9MB/148.1MB
+[14B[12A[2K
+44dae81cd598: Downloading [>                                                  ]  2.149MB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [=================>                                 ]  16.22MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [=======================>                           ]  70.25MB/148.1MB
+[14B[12A[2K
+44dae81cd598: Downloading [=>                                                 ]  4.299MB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [=====================>                             ]  19.66MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [==========================>                        ]   78.3MB/148.1MB
+[14B[12A[2K
+44dae81cd598: Downloading [==>                                                ]   6.99MB/124.2MB
+[12B[11A[2K
+b57a13b106fe: Downloading [==================================================>]     267B/267B
+[11B[11A[2K
+b57a13b106fe: Verifying Checksum
+[11B[11A[2K
+b57a13b106fe: Download complete
+[11B[18A[2K
+58690f9b18fc: Extracting [========================>                          ]  22.61MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [=============================>                     ]   88.5MB/148.1MB
+[14B[12A[2K
+44dae81cd598: Downloading [====>                                              ]  10.75MB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [==========================>                        ]  25.07MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [================================>                  ]  95.48MB/148.1MB
+[14B[12A[2K
+44dae81cd598: Downloading [======>                                            ]  15.05MB/124.2MB
+[12B[14A[2K
+56e743b93cb5: Downloading [==================================>                ]  101.9MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [==============================>                    ]  28.51MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [=======>                                           ]  19.36MB/124.2MB
+[12B[14A[2K
+56e743b93cb5: Downloading [====================================>              ]  107.2MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [===============================>                   ]     29MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [==========>                                        ]  25.81MB/124.2MB
+[12B[14A[2K
+56e743b93cb5: Downloading [======================================>            ]  113.1MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [================================>                  ]  30.47MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [============>                                      ]  31.69MB/124.2MB
+[12B[14A[2K
+56e743b93cb5: Downloading [=======================================>           ]    118MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [===================================>               ]  32.93MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [===============>                                   ]  38.16MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [>                                                  ]  408.8kB/40.59MB
+[10B[14A[2K
+56e743b93cb5: Downloading [=========================================>         ]  122.8MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [=====================================>             ]   34.9MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [=================>                                 ]  43.53MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [====>                                              ]  3.291MB/40.59MB
+[10B[14A[2K
+56e743b93cb5: Downloading [===========================================>       ]  127.6MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [=======================================>           ]  36.37MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [===================>                               ]  49.45MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [==========>                                        ]  8.239MB/40.59MB
+[10B[14A[2K
+56e743b93cb5: Downloading [============================================>      ]  131.4MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [========================================>          ]  37.85MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [=====================>                             ]   54.3MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [===============>                                   ]  12.77MB/40.59MB
+[10B[14A[2K
+56e743b93cb5: Downloading [=============================================>     ]  136.2MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [=========================================>         ]  38.34MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [========================>                          ]  59.69MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [====================>                              ]  16.89MB/40.59MB
+[10B[18A[2K
+58690f9b18fc: Extracting [==========================================>        ]  39.32MB/46.5MB
+[18B[14A[2K
+56e743b93cb5: Downloading [===============================================>   ]    141MB/148.1MB
+[14B[10A[2K
+a87e429dd76b: Downloading [=========================>                         ]   20.6MB/40.59MB
+[10B[12A[2K
+44dae81cd598: Downloading [=========================>                         ]  63.99MB/124.2MB
+[12B[14A[2K
+56e743b93cb5: Downloading [=================================================> ]  145.3MB/148.1MB
+[14B[18A[2K
+58690f9b18fc: Extracting [===========================================>       ]   40.3MB/46.5MB
+[18B[10A[2K
+a87e429dd76b: Downloading [=============================>                     ]   23.9MB/40.59MB
+[10B[12A[2K
+44dae81cd598: Downloading [===========================>                       ]  69.36MB/124.2MB
+[12B[14A[2K
+56e743b93cb5: Verifying Checksum
+[14B[14A[2K
+56e743b93cb5: Download complete
+[14B[10A[2K
+a87e429dd76b: Downloading [===================================>               ]  28.85MB/40.59MB
+[10B[12A[2K
+44dae81cd598: Downloading [==============================>                    ]  76.38MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [========================================>          ]  33.01MB/40.59MB
+[10B[12A[2K
+44dae81cd598: Downloading [================================>                  ]  81.76MB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [============================================>      ]  41.29MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Downloading [===================================>               ]  88.72MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [============================================>      ]   36.3MB/40.59MB
+[10B[12A[2K
+44dae81cd598: Downloading [=======================================>           ]  98.41MB/124.2MB
+[12B[10A[2K
+a87e429dd76b: Downloading [=================================================> ]  40.43MB/40.59MB
+[10B[18A[2K
+58690f9b18fc: Extracting [==============================================>    ]  43.25MB/46.5MB
+[18B[10A[2K
+a87e429dd76b: Verifying Checksum
+[10B[10A[2K
+a87e429dd76b: Download complete
+[10B[12A[2K
+44dae81cd598: Downloading [==========================================>        ]  104.8MB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [================================================>  ]  44.73MB/46.5MB
+[18B[9A[2K
+c5951ecb0a84: Downloading [==================================================>]     367B/367B
+[9B[9A[2K
+c5951ecb0a84: Verifying Checksum
+[9B[9A[2K
+c5951ecb0a84: Download complete
+[9B[12A[2K
+44dae81cd598: Downloading [=============================================>     ]  113.9MB/124.2MB
+[12B[18A[2K
+58690f9b18fc: Extracting [==================================================>]   46.5MB/46.5MB
+[18B[12A[2K
+44dae81cd598: Verifying Checksum
+[12B[12A[2K
+44dae81cd598: Download complete
+[12B[18A[2K
+58690f9b18fc: Pull complete
+[18B[17A[2K
+b51569e7c507: Extracting [==================================================>]     857B/857B
+[17B[17A[2K
+b51569e7c507: Extracting [==================================================>]     857B/857B
+[17B[17A[2K
+b51569e7c507: Pull complete
+[17B[16A[2K
+da8ef40b9eca: Extracting [==================================================>]     528B/528B
+[16B[16A[2K
+da8ef40b9eca: Extracting [==================================================>]     528B/528B
+[16B[16A[2K
+da8ef40b9eca: Pull complete
+[16B[15A[2K
+fb15d46c38dc: Extracting [==================================================>]     170B/170B
+[15B[15A[2K
+fb15d46c38dc: Extracting [==================================================>]     170B/170B
+[15B[15A[2K
+fb15d46c38dc: Pull complete
+[15B[8A[2K
+afa3fec65bab: Downloading [>                                                  ]    539kB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Downloading [===>                                               ]  6.462MB/95.14MB
+[8B[14A[2K
+56e743b93cb5: Extracting [>                                                  ]  557.1kB/148.1MB
+[14B[7A[2K
+86b1770092fb: Downloading [======>                                            ]     663B/4.868kB
+[7B[7A[2K
+86b1770092fb: Downloading [==================================================>]  4.868kB/4.868kB
+[7B[7A[2K
+86b1770092fb: Verifying Checksum
+[7B[7A[2K
+86b1770092fb: Download complete
+[7B[8A[2K
+afa3fec65bab: Downloading [=========>                                         ]  17.77MB/95.14MB
+[8B[14A[2K
+56e743b93cb5: Extracting [=>                                                 ]  3.899MB/148.1MB
+[14B[6A[2K
+4cc5dd1fa0d1: Downloading [======>                                            ]     661B/4.786kB
+[6B[6A[2K
+4cc5dd1fa0d1: Verifying Checksum
+[6B[6A[2K
+4cc5dd1fa0d1: Download complete
+[6B[8A[2K
+afa3fec65bab: Downloading [==============>                                    ]  28.54MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Downloading [====================>                              ]  38.69MB/95.14MB
+[8B[14A[2K
+56e743b93cb5: Extracting [==>                                                ]  6.685MB/148.1MB
+[14B[8A[2K
+afa3fec65bab: Downloading [=========================>                         ]   47.8MB/95.14MB
+[8B[14A[2K
+56e743b93cb5: Extracting [==>                                                ]  8.356MB/148.1MB
+[14B[8A[2K
+afa3fec65bab: Downloading [================================>                  ]  62.31MB/95.14MB
+[8B[14A[2K
+56e743b93cb5: Extracting [===>                                               ]  11.14MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [>                                                  ]  526.7kB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [====>                                              ]  13.93MB/148.1MB
+[14B[8A[2K
+afa3fec65bab: Downloading [====================================>              ]  69.84MB/95.14MB
+[8B[5A[2K
+6f4fa2bbede2: Downloading [=>                                                 ]  5.376MB/203.3MB
+[5B[4A[2K
+4f4fb700ef54: Downloading [==================================================>]      32B/32B
+[4B[4A[2K
+4f4fb700ef54: Verifying Checksum
+[4B[4A[2K
+4f4fb700ef54: Download complete
+[4B[14A[2K
+56e743b93cb5: Extracting [=====>                                             ]   15.6MB/148.1MB
+[14B[8A[2K
+afa3fec65bab: Downloading [=======================================>           ]  75.21MB/95.14MB
+[8B[5A[2K
+6f4fa2bbede2: Downloading [===>                                               ]  13.42MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [======>                                            ]  18.94MB/148.1MB
+[14B[8A[2K
+afa3fec65bab: Downloading [==========================================>        ]  81.12MB/95.14MB
+[8B[5A[2K
+6f4fa2bbede2: Downloading [====>                                              ]  19.84MB/203.3MB
+[5B[8A[2K
+afa3fec65bab: Downloading [=============================================>     ]     87MB/95.14MB
+[8B[5A[2K
+6f4fa2bbede2: Downloading [======>                                            ]  24.66MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=======>                                           ]  22.28MB/148.1MB
+[14B[8A[2K
+afa3fec65bab: Downloading [================================================>  ]  91.86MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Verifying Checksum
+[8B[8A[2K
+afa3fec65bab: Download complete
+[8B[5A[2K
+6f4fa2bbede2: Downloading [=======>                                           ]  32.17MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=======>                                           ]  22.84MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [===========>                                       ]  45.05MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=======>                                           ]   23.4MB/148.1MB
+[14B[3A[2K
+b710aa037dda: Downloading [>                                                  ]  138.7kB/13.78MB
+[3B[5A[2K
+6f4fa2bbede2: Downloading [=============>                                     ]  53.09MB/203.3MB
+[5B[3A[2K
+b710aa037dda: Downloading [==========>                                        ]  2.927MB/13.78MB
+[3B[5A[2K
+6f4fa2bbede2: Downloading [==============>                                    ]  57.38MB/203.3MB
+[5B[3A[2K
+b710aa037dda: Downloading [==========================>                        ]   7.17MB/13.78MB
+[3B[5A[2K
+6f4fa2bbede2: Downloading [===============>                                   ]  64.37MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [========>                                          ]  24.51MB/148.1MB
+[14B[3A[2K
+b710aa037dda: Verifying Checksum
+[3B[3A[2K
+b710aa037dda: Download complete
+[3B[2A[2K
+4405df13a743: Downloading [==================================================>]     199B/199B
+[2B[2A[2K
+4405df13a743: Verifying Checksum
+[2B[2A[2K
+4405df13a743: Download complete
+[2B[5A[2K
+6f4fa2bbede2: Downloading [==================>                                ]   73.5MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [========>                                          ]  25.62MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [====================>                              ]  83.74MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [========>                                          ]  26.18MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [=====================>                             ]  89.13MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=========>                                         ]  27.85MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [=======================>                           ]   96.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Downloading [==========================>                        ]    109MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [==========>                                        ]  31.75MB/148.1MB
+[14B[1A[2K
+8479916956da: Downloading [==================================================>]     222B/222B
+[1B[1A[2K
+8479916956da: Verifying Checksum
+[1B[1A[2K
+8479916956da: Download complete
+[1B[5A[2K
+6f4fa2bbede2: Downloading [=============================>                     ]  119.2MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [===========>                                       ]  34.54MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [==============================>                    ]  125.5MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [============>                                      ]  36.77MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [=================================>                 ]  135.1MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=============>                                     ]  40.11MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [===================================>               ]  144.8MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [==============>                                    ]  44.01MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [=====================================>             ]  154.4MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [===============>                                   ]  46.79MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [========================================>          ]    163MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=================>                                 ]  50.69MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [==========================================>        ]  173.7MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [=================>                                 ]  52.92MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [============================================>      ]  179.1MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [==================>                                ]  54.59MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [==============================================>    ]  190.4MB/203.3MB
+[5B[14A[2K
+56e743b93cb5: Extracting [===================>                               ]  57.93MB/148.1MB
+[14B[5A[2K
+6f4fa2bbede2: Downloading [=================================================> ]  201.7MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Verifying Checksum
+[5B[5A[2K
+6f4fa2bbede2: Download complete
+[5B[14A[2K
+56e743b93cb5: Extracting [====================>                              ]  61.83MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [======================>                            ]  66.29MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=======================>                           ]  68.52MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [========================>                          ]  71.86MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=========================>                         ]  74.09MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=========================>                         ]  76.32MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [==========================>                        ]  78.54MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [===========================>                       ]  80.22MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [============================>                      ]     83MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [============================>                      ]  84.12MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [============================>                      ]  85.23MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=============================>                     ]  88.57MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [===============================>                   ]  94.14MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=================================>                 ]  99.71MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [===================================>               ]  104.7MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [====================================>              ]  109.2MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [======================================>            ]  114.8MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=======================================>           ]    117MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [========================================>          ]  120.3MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=========================================>         ]  123.7MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [==========================================>        ]  125.3MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [===========================================>       ]  127.6MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [============================================>      ]  131.5MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=============================================>     ]  133.7MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [==============================================>    ]    137MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [===============================================>   ]  140.4MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [===============================================>   ]    142MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [================================================>  ]  143.7MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=================================================> ]  145.9MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [=================================================> ]  147.1MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Extracting [==================================================>]  148.1MB/148.1MB
+[14B[14A[2K
+56e743b93cb5: Pull complete
+[14B[13A[2K
+717a1c6f6f5f: Extracting [==================================================>]     482B/482B
+[13B[13A[2K
+717a1c6f6f5f: Extracting [==================================================>]     482B/482B
+[13B[13A[2K
+717a1c6f6f5f: Pull complete
+[13B[12A[2K
+44dae81cd598: Extracting [>                                                  ]  557.1kB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==>                                                ]  5.571MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [====>                                              ]  10.58MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=====>                                             ]  14.48MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=======>                                           ]  18.38MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=========>                                         ]  23.95MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [===========>                                       ]  27.85MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [===========>                                       ]  29.52MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [============>                                      ]  31.75MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==============>                                    ]  35.09MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [================>                                  ]  41.22MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=================>                                 ]  44.56MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [===================>                               ]  47.91MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=====================>                             ]  52.36MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=======================>                           ]  57.93MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=========================>                         ]  62.95MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==========================>                        ]  65.18MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [===========================>                       ]   67.4MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=============================>                     ]  72.42MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [===============================>                   ]  77.99MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=================================>                 ]     83MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==================================>                ]  84.67MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==================================>                ]  86.34MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [====================================>              ]  91.36MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [======================================>            ]  96.37MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=========================================>         ]  101.9MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==========================================>        ]  106.4MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [============================================>      ]  111.4MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=============================================>     ]  113.1MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==============================================>    ]  115.9MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [================================================>  ]  119.8MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [================================================>  ]  120.3MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [================================================>  ]  121.4MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=================================================> ]    122MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [=================================================> ]  122.6MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==================================================>]  124.2MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Extracting [==================================================>]  124.2MB/124.2MB
+[12B[12A[2K
+44dae81cd598: Pull complete
+[12B[11A[2K
+b57a13b106fe: Extracting [==================================================>]     267B/267B
+[11B[11A[2K
+b57a13b106fe: Extracting [==================================================>]     267B/267B
+[11B[11A[2K
+b57a13b106fe: Pull complete
+[11B[10A[2K
+a87e429dd76b: Extracting [>                                                  ]    426kB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=====>                                             ]  4.686MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=============>                                     ]  10.65MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=================>                                 ]  14.06MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=====================>                             ]  17.47MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=========================>                         ]  20.87MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [============================>                      ]     23MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [==============================>                    ]  24.71MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=================================>                 ]  27.26MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [====================================>              ]  29.39MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [======================================>            ]  31.52MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=======================================>           ]  32.37MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [=========================================>         ]  33.65MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [===========================================>       ]  34.93MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [==============================================>    ]  37.91MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Extracting [==================================================>]  40.59MB/40.59MB
+[10B[10A[2K
+a87e429dd76b: Pull complete
+[10B[9A[2K
+c5951ecb0a84: Extracting [==================================================>]     367B/367B
+[9B[9A[2K
+c5951ecb0a84: Extracting [==================================================>]     367B/367B
+[9B[9A[2K
+c5951ecb0a84: Pull complete
+[9B[8A[2K
+afa3fec65bab: Extracting [>                                                  ]  557.1kB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=========>                                         ]  18.94MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==============>                                    ]  26.74MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==============>                                    ]  28.41MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [================>                                  ]   31.2MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==================>                                ]  35.65MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [====================>                              ]  38.99MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [======================>                            ]  42.89MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=======================>                           ]  45.12MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [========================>                          ]  47.35MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==========================>                        ]  49.58MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [============================>                      ]  53.48MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==============================>                    ]  57.93MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==============================>                    ]  58.49MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [===============================>                   ]   59.6MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=================================>                 ]  64.06MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [====================================>              ]  68.52MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=====================================>             ]  70.75MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [======================================>            ]  72.97MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=======================================>           ]   75.2MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [========================================>          ]  77.43MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==========================================>        ]  80.22MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [===========================================>       ]     83MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [============================================>      ]  85.23MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=============================================>     ]   86.9MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==============================================>    ]  89.13MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [===============================================>   ]  90.24MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [================================================>  ]  91.91MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [=================================================> ]  93.59MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Extracting [==================================================>]  95.14MB/95.14MB
+[8B[8A[2K
+afa3fec65bab: Pull complete
+[8B[7A[2K
+86b1770092fb: Extracting [==================================================>]  4.868kB/4.868kB
+[7B[7A[2K
+86b1770092fb: Extracting [==================================================>]  4.868kB/4.868kB
+[7B[7A[2K
+86b1770092fb: Pull complete
+[7B[6A[2K
+4cc5dd1fa0d1: Extracting [==================================================>]  4.786kB/4.786kB
+[6B[6A[2K
+4cc5dd1fa0d1: Extracting [==================================================>]  4.786kB/4.786kB
+[6B[6A[2K
+4cc5dd1fa0d1: Pull complete
+[6B[5A[2K
+6f4fa2bbede2: Extracting [>                                                  ]  557.1kB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=>                                                 ]  6.685MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==>                                                ]   11.7MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===>                                               ]  13.37MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===>                                               ]  15.04MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [====>                                              ]  17.27MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [====>                                              ]  20.05MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=====>                                             ]  23.95MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [======>                                            ]  28.41MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=======>                                           ]  31.75MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========>                                          ]  34.54MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=========>                                         ]  39.55MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==========>                                        ]  44.56MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [============>                                      ]  49.02MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [============>                                      ]  51.25MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=============>                                     ]  56.26MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==============>                                    ]  60.16MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===============>                                   ]  64.06MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [================>                                  ]  69.07MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==================>                                ]  74.09MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===================>                               ]  80.22MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [====================>                              ]  85.23MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=====================>                             ]  88.57MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [======================>                            ]   90.8MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=======================>                           ]  95.81MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================>                          ]  100.3MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=========================>                         ]  104.2MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==========================>                        ]    107MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==========================>                        ]  109.7MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===========================>                       ]  113.6MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [============================>                      ]  117.5MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==============================>                    ]    122MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===============================>                   ]    127MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [================================>                  ]  131.5MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=================================>                 ]  135.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==================================>                ]  139.8MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===================================>               ]  145.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [====================================>              ]  150.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=====================================>             ]  152.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=====================================>             ]  154.3MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [======================================>            ]  157.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=======================================>           ]  159.9MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================================>          ]  163.2MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================================>          ]  164.3MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================================>          ]  164.9MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================================>          ]  165.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================================>          ]    166MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [========================================>          ]  166.6MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=========================================>         ]  167.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=========================================>         ]  168.2MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=========================================>         ]  170.5MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==========================================>        ]  173.2MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===========================================>       ]  174.9MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===========================================>       ]    176MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===========================================>       ]  177.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [============================================>      ]  179.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [============================================>      ]  182.2MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=============================================>     ]  184.9MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=============================================>     ]  186.6MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==============================================>    ]  187.7MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==============================================>    ]  189.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==============================================>    ]  191.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===============================================>   ]  192.2MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===============================================>   ]  193.3MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [===============================================>   ]  194.4MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [================================================>  ]  196.1MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [================================================>  ]  198.9MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=================================================> ]  200.5MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=================================================> ]  201.7MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [=================================================> ]  202.8MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==================================================>]  203.3MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Extracting [==================================================>]  203.3MB/203.3MB
+[5B[5A[2K
+6f4fa2bbede2: Pull complete
+[5B[4A[2K
+4f4fb700ef54: Extracting [==================================================>]      32B/32B
+[4B[4A[2K
+4f4fb700ef54: Extracting [==================================================>]      32B/32B
+[4B[4A[2K
+4f4fb700ef54: Pull complete
+[4B[3A[2K
+b710aa037dda: Extracting [>                                                  ]  163.8kB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [=====================>                             ]  5.898MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [========================>                          ]  6.717MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [===========================>                       ]  7.537MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [================================>                  ]  8.847MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [===================================>               ]  9.667MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [====================================>              ]  10.16MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [==========================================>        ]   11.8MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [===========================================>       ]  11.96MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [==============================================>    ]  12.94MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Extracting [==================================================>]  13.78MB/13.78MB
+[3B[3A[2K
+b710aa037dda: Pull complete
+[3B[2A[2K
+4405df13a743: Extracting [==================================================>]     199B/199B
+[2B[2A[2K
+4405df13a743: Extracting [==================================================>]     199B/199B
+[2B[2A[2K
+4405df13a743: Pull complete
+[2B[1A[2K
+8479916956da: Extracting [==================================================>]     222B/222B
+[1B[1A[2K
+8479916956da: Extracting [==================================================>]     222B/222B
+[1B[1A[2K
+8479916956da: Pull complete
+[1B[2K
+Digest: sha256:73a5de1c3ce7c493acc59976bf5a4806eb43ad69e8b4ab8e1df3e4d5b3a4811c
+
+
+[2K
+Status: Downloaded newer image for appsignal/agent-test:0.0.42
+
+
+Creating tmp_main_run ... 
+
+
+Creating tmp_main_run ... done
+
+
+Starting the docker image...
+Starting a new bash session.
+Exporting environment variables
+Exporting PAGER
+Exporting DISPLAY
+Exporting TERM
+Exporting CI
+Exporting SEMAPHORE
+Exporting SEMAPHORE_PROJECT_NAME
+Exporting SEMAPHORE_PROJECT_ID
+Exporting SEMAPHORE_JOB_NAME
+Exporting SEMAPHORE_JOB_ID
+Exporting SEMAPHORE_AGENT_MACHINE_TYPE
+Exporting SEMAPHORE_AGENT_MACHINE_OS_IMAGE
+Exporting SEMAPHORE_AGENT_MACHINE_ENVIRONMENT_TYPE
+Exporting SEMAPHORE_ORGANIZATION_URL
+Exporting SEMAPHORE_ARTIFACT_TOKEN
+Exporting SSH_PRIVATE_KEY_PATH
+Exporting SEMAPHORE_CACHE_BACKEND
+Exporting SEMAPHORE_CACHE_PRIVATE_KEY_PATH
+Exporting SEMAPHORE_CACHE_USERNAME
+Exporting SEMAPHORE_CACHE_URL
+Exporting SEMAPHORE_CACHE_NEW_CLI
+Exporting SEMAPHORE_TOOLBOX_METRICS_ENABLED
+Exporting SEMAPHORE_GIT_PROVIDER
+Exporting SEMAPHORE_GIT_URL
+Exporting SEMAPHORE_GIT_DIR
+Exporting SEMAPHORE_GIT_SHA
+Exporting SEMAPHORE_GIT_REPO_SLUG
+Exporting SEMAPHORE_GIT_REF
+Exporting SEMAPHORE_GIT_COMMIT_RANGE
+Exporting SEMAPHORE_GIT_REF_TYPE
+Exporting SEMAPHORE_GIT_BRANCH
+Exporting SEMAPHORE_GIT_WORKING_BRANCH
+Exporting SEMAPHORE_WORKFLOW_ID
+Exporting SEMAPHORE_WORKFLOW_NUMBER
+Exporting SEMAPHORE_WORKFLOW_RERUN
+Exporting SEMAPHORE_WORKFLOW_TRIGGERED_BY_HOOK
+Exporting SEMAPHORE_WORKFLOW_HOOK_SOURCE
+Exporting SEMAPHORE_WORKFLOW_TRIGGERED_BY_SCHEDULE
+Exporting SEMAPHORE_WORKFLOW_TRIGGERED_BY_API
+Exporting SEMAPHORE_PIPELINE_ARTEFACT_ID
+Exporting SEMAPHORE_PIPELINE_ID
+Exporting SEMAPHORE_PIPELINE_RERUN
+Exporting SEMAPHORE_PIPELINE_PROMOTION
+Exporting SEMAPHORE_PIPELINE_PROMOTED_BY
+Exporting SEMAPHORE_PIPELINE_0_ARTEFACT_ID
+Exporting RUNNING_ON_CI
+Exporting TARGET_TRIPLE
+Exporting SEMAPHORE_JOB_COUNT
+Exporting SEMAPHORE_JOB_INDEX
+Injecting Files
+Injecting ~/.ssh/semaphore_cache_key with file mode 0600
+Injecting .ssh/id_rsa with file mode 0600
+Setting up the Semaphore toolbox
+Running: dowloadPath=$(curl -s -L --retry 5 http://packages.semaphoreci.com/toolbox/linux) && echo $dowloadPath && curl -s -L --retry 5 --connect-timeout 3 $dowloadPath -o /tmp/toolbox.tar && tar -xvf /tmp/toolbox.tar && mv toolbox ~/.toolbox && bash ~/.toolbox/install-toolbox && source ~/.toolbox/toolbox && echo 'source ~/.toolbox/toolbox' >> ~/.bash_profile && if [ -f /etc/init.d/xvfb ]; then /etc/init.d/xvfb start; fi
+http://packages.semaphoreci.com/toolbox/releases/download/v1.18.6/linux.tar
+toolbox/
+toolbox/cache
+toolbox/ssh-session-cli
+toolbox/spc
+toolbox/sem-install
+toolbox/README.md
+toolbox/test-results
+toolbox/system-metrics-collector
+toolbox/enetwork
+toolbox/libchecksum
+toolbox/sem-service-check-params
+toolbox/artifact
+toolbox/retry
+toolbox/new-cache
+toolbox/sem-service
+toolbox/Dockerfile.dev
+toolbox/sem-version
+toolbox/when
+toolbox/sem-dockerize
+toolbox/toolbox
+toolbox/install-package
+toolbox/install-toolbox
+toolbox/libcheckout
+retry installed
+ssh-session-cli installed
+cache installed
+sem-service installed
+sem-dockerize installed
+sem-service-check-params installed
+install-package installed
+Installing the artifacts CLI
+artifacts installed
+Installing the test results CLI
+test-results installed
+Installing the SPC CLI
+spc installed
+Installing the when CLI
+when installed
+Installing the enetwork CLI
+when installed
+Starting to collect System Metrics in /tmp/system-metrics
+Starting an ssh-agent
+Running: eval `ssh-agent` && echo 'eval $(ssh-agent) >/dev/null' >> ~/.bash_profile && echo 'yes' > /tmp/sempahore-user-commands-have-started
+Agent pid 144
+Connecting to cache
+Running: (ssh-keyscan -p 29920 -H 94.130.123.200 >> ~/.ssh/known_hosts || true) && ssh-add ~/.ssh/semaphore_cache_key
+# 94.130.123.200:29920 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+# 94.130.123.200:29920 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+# 94.130.123.200:29920 SSH-2.0-OpenSSH_7.6p1 Ubuntu-4ubuntu0.3
+Identity added: /home/appsignal/.ssh/semaphore_cache_key (/home/appsignal/.ssh/semaphore_cache_key)
+checkout
+Performing shallow clone with depth: 50
+HEAD is now at ef4c068 Add TCP server to the agent
+cache restore v2-bundle-$(checksum Gemfile.lock),v2-bundle-
+HIT: 'v2-bundle-9895f4238b6bc51a49783dd935aeec7b', using key 'v2-bundle-9895f4238b6bc51a49783dd935aeec7b'.
+Downloading key 'v2-bundle-9895f4238b6bc51a49783dd935aeec7b'...
+Download complete. Duration: 164.542965ms. Size: 17.2M bytes.
+Unpacking '/tmp/v2-bundle-9895f4238b6bc51a49783dd935aeec7b-683111690'...
+Unpack complete. Duration: 520.146335ms.
+Restored: /tmp/_appsignal_agent/bundle/.
+echo > RUST_CHECKSUM
+cat Cargo.lock >> RUST_CHECKSUM
+cache restore v8-rustup-gnu-$(checksum RUST_CHECKSUM),v8-rustup-gnu-
+HIT: 'v8-rustup-gnu-c3966b31358fdc3d6a7e067a2d53fc54', using key 'v8-rustup-gnu-c3966b31358fdc3d6a7e067a2d53fc54'.
+Downloading key 'v8-rustup-gnu-c3966b31358fdc3d6a7e067a2d53fc54'...
+Download complete. Duration: 1.71320062s. Size: 187.2M bytes.
+Unpacking '/tmp/v8-rustup-gnu-c3966b31358fdc3d6a7e067a2d53fc54-754749419'...
+Unpack complete. Duration: 6.876884887s.
+Restored: /home/appsignal/.rustup/.
+cache restore v7-cargo-gnu-$(checksum RUST_CHECKSUM),v7-cargo-gnu-
+HIT: 'v7-cargo-gnu-c3966b31358fdc3d6a7e067a2d53fc54', using key 'v7-cargo-gnu-c3966b31358fdc3d6a7e067a2d53fc54'.
+Downloading key 'v7-cargo-gnu-c3966b31358fdc3d6a7e067a2d53fc54'...
+Download complete. Duration: 1.74729129s. Size: 186.6M bytes.
+Unpacking '/tmp/v7-cargo-gnu-c3966b31358fdc3d6a7e067a2d53fc54-567410212'...
+Unpack complete. Duration: 1.789685029s.
+Restored: /tmp/_appsignal_agent/cargo/.
+./bin/generate_rust_packages_checksum
+cache restore v1-build-$SEMAPHORE_WORKFLOW_ID
+HIT: 'v1-build-ab1c0238-a590-4a91-8f76-ef60a14640e4', using key 'v1-build-ab1c0238-a590-4a91-8f76-ef60a14640e4'.
+Downloading key 'v1-build-ab1c0238-a590-4a91-8f76-ef60a14640e4'...
+Download complete. Duration: 41.701627ms. Size: 3.8M bytes.
+Unpacking '/tmp/v1-build-ab1c0238-a590-4a91-8f76-ef60a14640e4-513401293'...
+Unpack complete. Duration: 82.081026ms.
+Restored: release/x86_64-unknown-linux-gnu/release/.
+./bin/docker_test init:ci ruby
+
+Initializing integration test environment for 'ruby'
+
+
+Init submodules (integrations)
+Submodule 'integrations/appsignal-elixir' (git@github.com:appsignal/appsignal-elixir.git) registered for path 'integrations/appsignal-elixir'
+Submodule 'integrations/appsignal-nodejs' (git@github.com:appsignal/appsignal-nodejs.git) registered for path 'integrations/appsignal-nodejs'
+Submodule 'appsignal-ruby' (git@github.com:appsignal/appsignal-ruby.git) registered for path 'integrations/appsignal-ruby'
+Synchronizing submodule url for 'integrations/appsignal-elixir'
+Synchronizing submodule url for 'integrations/appsignal-nodejs'
+Synchronizing submodule url for 'integrations/appsignal-ruby'
+Cloning into 'integrations/appsignal-ruby'...
+Warning: Permanently added 'github.com,140.82.121.4' (ECDSA) to the list of known hosts.
+remote: Enumerating objects: 24914, done.[K
+remote: Counting objects:   0% (1/1729)[K
+remote: Counting objects:   1% (18/1729)[K
+remote: Counting objects:   2% (35/1729)[K
+remote: Counting objects:   3% (52/1729)[K
+remote: Counting objects:   4% (70/1729)[K
+remote: Counting objects:   5% (87/1729)[K
+remote: Counting objects:   6% (104/1729)[K
+remote: Counting objects:   7% (122/1729)[K
+remote: Counting objects:   8% (139/1729)[K
+remote: Counting objects:   9% (156/1729)[K
+remote: Counting objects:  10% (173/1729)[K
+remote: Counting objects:  11% (191/1729)[K
+remote: Counting objects:  12% (208/1729)[K
+remote: Counting objects:  13% (225/1729)[K
+remote: Counting objects:  14% (243/1729)[K
+remote: Counting objects:  15% (260/1729)[K
+remote: Counting objects:  16% (277/1729)[K
+remote: Counting objects:  17% (294/1729)[K
+remote: Counting objects:  18% (312/1729)[K
+remote: Counting objects:  19% (329/1729)[K
+remote: Counting objects:  20% (346/1729)[K
+remote: Counting objects:  21% (364/1729)[K
+remote: Counting objects:  22% (381/1729)[K
+remote: Counting objects:  23% (398/1729)[K
+remote: Counting objects:  24% (415/1729)[K
+remote: Counting objects:  25% (433/1729)[K
+remote: Counting objects:  26% (450/1729)[K
+remote: Counting objects:  27% (467/1729)[K
+remote: Counting objects:  28% (485/1729)[K
+remote: Counting objects:  29% (502/1729)[K
+remote: Counting objects:  30% (519/1729)[K
+remote: Counting objects:  31% (536/1729)[K
+remote: Counting objects:  32% (554/1729)[K
+remote: Counting objects:  33% (571/1729)[K
+remote: Counting objects:  34% (588/1729)[K
+remote: Counting objects:  35% (606/1729)[K
+remote: Counting objects:  36% (623/1729)[K
+remote: Counting objects:  37% (640/1729)[K
+remote: Counting objects:  38% (658/1729)[K
+remote: Counting objects:  39% (675/1729)[K
+remote: Counting objects:  40% (692/1729)[K
+remote: Counting objects:  41% (709/1729)[K
+remote: Counting objects:  42% (727/1729)[K
+remote: Counting objects:  43% (744/1729)[K
+remote: Counting objects:  44% (761/1729)[K
+remote: Counting objects:  45% (779/1729)[K
+remote: Counting objects:  46% (796/1729)[K
+remote: Counting objects:  47% (813/1729)[K
+remote: Counting objects:  48% (830/1729)[K
+remote: Counting objects:  49% (848/1729)[K
+remote: Counting objects:  50% (865/1729)[K
+remote: Counting objects:  51% (882/1729)[K
+remote: Counting objects:  52% (900/1729)[K
+remote: Counting objects:  53% (917/1729)[K
+remote: Counting objects:  54% (934/1729)[K
+remote: Counting objects:  55% (951/1729)[K
+remote: Counting objects:  56% (969/1729)[K
+remote: Counting objects:  57% (986/1729)[K
+remote: Counting objects:  58% (1003/1729)[K
+remote: Counting objects:  59% (1021/1729)[K
+remote: Counting objects:  60% (1038/1729)[K
+remote: Counting objects:  61% (1055/1729)[K
+remote: Counting objects:  62% (1072/1729)[K
+remote: Counting objects:  63% (1090/1729)[K
+remote: Counting objects:  64% (1107/1729)[K
+remote: Counting objects:  65% (1124/1729)[K
+remote: Counting objects:  66% (1142/1729)[K
+remote: Counting objects:  67% (1159/1729)[K
+remote: Counting objects:  68% (1176/1729)[K
+remote: Counting objects:  69% (1194/1729)[K
+remote: Counting objects:  70% (1211/1729)[K
+remote: Counting objects:  71% (1228/1729)[K
+remote: Counting objects:  72% (1245/1729)[K
+remote: Counting objects:  73% (1263/1729)[K
+remote: Counting objects:  74% (1280/1729)[K
+remote: Counting objects:  75% (1297/1729)[K
+remote: Counting objects:  76% (1315/1729)[K
+remote: Counting objects:  77% (1332/1729)[K
+remote: Counting objects:  78% (1349/1729)[K
+remote: Counting objects:  79% (1366/1729)[K
+remote: Counting objects:  80% (1384/1729)[K
+remote: Counting objects:  81% (1401/1729)[K
+remote: Counting objects:  82% (1418/1729)[K
+remote: Counting objects:  83% (1436/1729)[K
+remote: Counting objects:  84% (1453/1729)[K
+remote: Counting objects:  85% (1470/1729)[K
+remote: Counting objects:  86% (1487/1729)[K
+remote: Counting objects:  87% (1505/1729)[K
+remote: Counting objects:  88% (1522/1729)[K
+remote: Counting objects:  89% (1539/1729)[K
+remote: Counting objects:  90% (1557/1729)[K
+remote: Counting objects:  91% (1574/1729)[K
+remote: Counting objects:  92% (1591/1729)[K
+remote: Counting objects:  93% (1608/1729)[K
+remote: Counting objects:  94% (1626/1729)[K
+remote: Counting objects:  95% (1643/1729)[K
+remote: Counting objects:  96% (1660/1729)[K
+remote: Counting objects:  97% (1678/1729)[K
+remote: Counting objects:  98% (1695/1729)[K
+remote: Counting objects:  99% (1712/1729)[K
+remote: Counting objects: 100% (1729/1729)[K
+remote: Counting objects: 100% (1729/1729), done.[K
+remote: Compressing objects:   0% (1/661)[K
+remote: Compressing objects:   1% (7/661)[K
+remote: Compressing objects:   2% (14/661)[K
+remote: Compressing objects:   3% (20/661)[K
+remote: Compressing objects:   4% (27/661)[K
+remote: Compressing objects:   5% (34/661)[K
+remote: Compressing objects:   6% (40/661)[K
+remote: Compressing objects:   7% (47/661)[K
+remote: Compressing objects:   8% (53/661)[K
+remote: Compressing objects:   9% (60/661)[K
+remote: Compressing objects:  10% (67/661)[K
+remote: Compressing objects:  11% (73/661)[K
+remote: Compressing objects:  12% (80/661)[K
+remote: Compressing objects:  13% (86/661)[K
+remote: Compressing objects:  14% (93/661)[K
+remote: Compressing objects:  15% (100/661)[K
+remote: Compressing objects:  16% (106/661)[K
+remote: Compressing objects:  17% (113/661)[K
+remote: Compressing objects:  18% (119/661)[K
+remote: Compressing objects:  19% (126/661)[K
+remote: Compressing objects:  20% (133/661)[K
+remote: Compressing objects:  21% (139/661)[K
+remote: Compressing objects:  22% (146/661)[K
+remote: Compressing objects:  23% (153/661)[K
+remote: Compressing objects:  24% (159/661)[K
+remote: Compressing objects:  25% (166/661)[K
+remote: Compressing objects:  26% (172/661)[K
+remote: Compressing objects:  27% (179/661)[K
+remote: Compressing objects:  28% (186/661)[K
+remote: Compressing objects:  29% (192/661)[K
+remote: Compressing objects:  30% (199/661)[K
+remote: Compressing objects:  31% (205/661)[K
+remote: Compressing objects:  32% (212/661)[K
+remote: Compressing objects:  33% (219/661)[K
+remote: Compressing objects:  34% (225/661)[K
+remote: Compressing objects:  35% (232/661)[K
+remote: Compressing objects:  36% (238/661)[K
+remote: Compressing objects:  37% (245/661)[K
+remote: Compressing objects:  38% (252/661)[K
+remote: Compressing objects:  39% (258/661)[K
+remote: Compressing objects:  40% (265/661)[K
+remote: Compressing objects:  41% (272/661)[K
+remote: Compressing objects:  42% (278/661)[K
+remote: Compressing objects:  43% (285/661)[K
+remote: Compressing objects:  44% (291/661)[K
+remote: Compressing objects:  45% (298/661)[K
+remote: Compressing objects:  46% (305/661)[K
+remote: Compressing objects:  47% (311/661)[K
+remote: Compressing objects:  48% (318/661)[K
+remote: Compressing objects:  49% (324/661)[K
+remote: Compressing objects:  50% (331/661)[K
+remote: Compressing objects:  51% (338/661)[K
+remote: Compressing objects:  52% (344/661)[K
+remote: Compressing objects:  53% (351/661)[K
+remote: Compressing objects:  54% (357/661)[K
+remote: Compressing objects:  55% (364/661)[K
+remote: Compressing objects:  56% (371/661)[K
+remote: Compressing objects:  57% (377/661)[K
+remote: Compressing objects:  58% (384/661)[K
+remote: Compressing objects:  59% (390/661)[K
+remote: Compressing objects:  60% (397/661)[K
+remote: Compressing objects:  61% (404/661)[K
+remote: Compressing objects:  62% (410/661)[K
+remote: Compressing objects:  63% (417/661)[K
+remote: Compressing objects:  64% (424/661)[K
+remote: Compressing objects:  65% (430/661)[K
+remote: Compressing objects:  66% (437/661)[K
+remote: Compressing objects:  67% (443/661)[K
+remote: Compressing objects:  68% (450/661)[K
+remote: Compressing objects:  69% (457/661)[K
+remote: Compressing objects:  70% (463/661)[K
+remote: Compressing objects:  71% (470/661)[K
+remote: Compressing objects:  72% (476/661)[K
+remote: Compressing objects:  73% (483/661)[K
+remote: Compressing objects:  74% (490/661)[K
+remote: Compressing objects:  75% (496/661)[K
+remote: Compressing objects:  76% (503/661)[K
+remote: Compressing objects:  77% (509/661)[K
+remote: Compressing objects:  78% (516/661)[K
+remote: Compressing objects:  79% (523/661)[K
+remote: Compressing objects:  80% (529/661)[K
+remote: Compressing objects:  81% (536/661)[K
+remote: Compressing objects:  82% (543/661)[K
+remote: Compressing objects:  83% (549/661)[K
+remote: Compressing objects:  84% (556/661)[K
+remote: Compressing objects:  85% (562/661)[K
+remote: Compressing objects:  86% (569/661)[K
+remote: Compressing objects:  87% (576/661)[K
+remote: Compressing objects:  88% (582/661)[K
+remote: Compressing objects:  89% (589/661)[K
+remote: Compressing objects:  90% (595/661)[K
+remote: Compressing objects:  91% (602/661)[K
+remote: Compressing objects:  92% (609/661)[K
+remote: Compressing objects:  93% (615/661)[K
+remote: Compressing objects:  94% (622/661)[K
+remote: Compressing objects:  95% (628/661)[K
+remote: Compressing objects:  96% (635/661)[K
+remote: Compressing objects:  97% (642/661)[K
+remote: Compressing objects:  98% (648/661)[K
+remote: Compressing objects:  99% (655/661)[K
+remote: Compressing objects: 100% (661/661)[K
+remote: Compressing objects: 100% (661/661), done.[K
+Receiving objects:   0% (1/24914)   
+Receiving objects:   1% (250/24914), 164.01 KiB | 277.00 KiB/s   
+Receiving objects:   1% (457/24914), 164.01 KiB | 277.00 KiB/s   
+Receiving objects:   2% (499/24914), 164.01 KiB | 277.00 KiB/s   
+Receiving objects:   3% (748/24914), 380.01 KiB | 332.00 KiB/s   
+Receiving objects:   4% (997/24914), 380.01 KiB | 332.00 KiB/s   
+Receiving objects:   5% (1246/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:   6% (1495/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:   7% (1744/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:   8% (1994/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:   9% (2243/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:   9% (2252/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:  10% (2492/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:  11% (2741/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:  12% (2990/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:  13% (3239/24914), 708.01 KiB | 417.00 KiB/s   
+Receiving objects:  14% (3488/24914), 1.14 MiB | 517.00 KiB/s   
+Receiving objects:  15% (3738/24914), 1.14 MiB | 517.00 KiB/s   
+Receiving objects:  16% (3987/24914), 1.14 MiB | 517.00 KiB/s   
+Receiving objects:  17% (4236/24914), 1.14 MiB | 517.00 KiB/s   
+Receiving objects:  18% (4485/24914), 1.14 MiB | 517.00 KiB/s   
+Receiving objects:  19% (4734/24914), 1.14 MiB | 517.00 KiB/s   
+Receiving objects:  20% (4983/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  21% (5232/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  22% (5482/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  23% (5731/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  24% (5980/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  25% (6229/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  26% (6478/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  27% (6727/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  28% (6976/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  29% (7226/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  29% (7310/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  30% (7475/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  31% (7724/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  32% (7973/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  33% (8222/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  34% (8471/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  35% (8720/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  36% (8970/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  37% (9219/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  38% (9468/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  39% (9717/24914), 1.73 MiB | 639.00 KiB/s   
+Receiving objects:  40% (9966/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  41% (10215/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  42% (10464/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  43% (10714/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  44% (10963/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  45% (11212/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  46% (11461/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  47% (11710/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  48% (11959/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  49% (12208/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  50% (12457/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  51% (12707/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  52% (12956/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  53% (13205/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  54% (13454/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  55% (13703/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  56% (13952/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  57% (14201/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  58% (14451/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  59% (14700/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  60% (14949/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  61% (15198/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  62% (15447/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  63% (15696/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  64% (15945/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  65% (16195/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  66% (16444/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  67% (16693/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  68% (16942/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  69% (17191/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  70% (17440/24914), 2.49 MiB | 777.00 KiB/s   
+Receiving objects:  71% (17689/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  72% (17939/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  73% (18188/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  74% (18437/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  75% (18686/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  76% (18935/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  77% (19184/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  78% (19433/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  78% (19458/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  79% (19683/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  80% (19932/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  81% (20181/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  82% (20430/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  83% (20679/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  84% (20928/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  85% (21177/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  86% (21427/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  87% (21676/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  88% (21925/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  89% (22174/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  90% (22423/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  91% (22672/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  92% (22921/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  93% (23171/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  94% (23420/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  95% (23669/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  96% (23918/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  97% (24167/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  98% (24416/24914), 3.64 MiB | 977.00 KiB/s   
+Receiving objects:  99% (24665/24914), 3.64 MiB | 977.00 KiB/s   
+remote: Total 24914 (delta 1038), reused 1633 (delta 989), pack-reused 23185[K
+Receiving objects: 100% (24914/24914), 5.04 MiB | 1.17 MiB/s   
+Receiving objects: 100% (24914/24914), 5.08 MiB | 1.17 MiB/s, done.
+Resolving deltas:   0% (0/15519)   
+Resolving deltas:   1% (158/15519)   
+Resolving deltas:   2% (341/15519)   
+Resolving deltas:   3% (533/15519)   
+Resolving deltas:   4% (634/15519)   
+Resolving deltas:   5% (783/15519)   
+Resolving deltas:   6% (1010/15519)   
+Resolving deltas:   7% (1087/15519)   
+Resolving deltas:   8% (1254/15519)   
+Resolving deltas:   9% (1430/15519)   
+Resolving deltas:  10% (1552/15519)   
+Resolving deltas:  11% (1710/15519)   
+Resolving deltas:  12% (1909/15519)   
+Resolving deltas:  13% (2028/15519)   
+Resolving deltas:  14% (2208/15519)   
+Resolving deltas:  15% (2331/15519)   
+Resolving deltas:  16% (2484/15519)   
+Resolving deltas:  17% (2643/15519)   
+Resolving deltas:  18% (2803/15519)   
+Resolving deltas:  19% (2982/15519)   
+Resolving deltas:  20% (3120/15519)   
+Resolving deltas:  21% (3299/15519)   
+Resolving deltas:  22% (3417/15519)   
+Resolving deltas:  23% (3573/15519)   
+Resolving deltas:  24% (3730/15519)   
+Resolving deltas:  25% (3911/15519)   
+Resolving deltas:  26% (4039/15519)   
+Resolving deltas:  27% (4290/15519)   
+Resolving deltas:  28% (4472/15519)   
+Resolving deltas:  29% (4513/15519)   
+Resolving deltas:  30% (4672/15519)   
+Resolving deltas:  32% (5003/15519)   
+Resolving deltas:  33% (5127/15519)   
+Resolving deltas:  34% (5283/15519)   
+Resolving deltas:  35% (5439/15519)   
+Resolving deltas:  36% (5599/15519)   
+Resolving deltas:  37% (5765/15519)   
+Resolving deltas:  39% (6135/15519)   
+Resolving deltas:  40% (6208/15519)   
+Resolving deltas:  41% (6368/15519)   
+Resolving deltas:  42% (6556/15519)   
+Resolving deltas:  43% (6675/15519)   
+Resolving deltas:  44% (6833/15519)   
+Resolving deltas:  45% (6986/15519)   
+Resolving deltas:  46% (7155/15519)   
+Resolving deltas:  47% (7298/15519)   
+Resolving deltas:  48% (7451/15519)   
+Resolving deltas:  49% (7620/15519)   
+Resolving deltas:  50% (7776/15519)   
+Resolving deltas:  51% (7924/15519)   
+Resolving deltas:  52% (8113/15519)   
+Resolving deltas:  53% (8227/15519)   
+Resolving deltas:  54% (8418/15519)   
+Resolving deltas:  55% (8569/15519)   
+Resolving deltas:  56% (8724/15519)   
+Resolving deltas:  57% (8847/15519)   
+Resolving deltas:  58% (9042/15519)   
+Resolving deltas:  59% (9161/15519)   
+Resolving deltas:  60% (9322/15519)   
+Resolving deltas:  61% (9496/15519)   
+Resolving deltas:  62% (9651/15519)   
+Resolving deltas:  63% (9799/15519)   
+Resolving deltas:  64% (9947/15519)   
+Resolving deltas:  65% (10098/15519)   
+Resolving deltas:  66% (10250/15519)   
+Resolving deltas:  67% (10419/15519)   
+Resolving deltas:  68% (10559/15519)   
+Resolving deltas:  69% (10710/15519)   
+Resolving deltas:  70% (10869/15519)   
+Resolving deltas:  71% (11030/15519)   
+Resolving deltas:  72% (11176/15519)   
+Resolving deltas:  73% (11396/15519)   
+Resolving deltas:  74% (11485/15519)   
+Resolving deltas:  75% (11647/15519)   
+Resolving deltas:  76% (11842/15519)   
+Resolving deltas:  77% (11981/15519)   
+Resolving deltas:  78% (12120/15519)   
+Resolving deltas:  79% (12267/15519)   
+Resolving deltas:  80% (12453/15519)   
+Resolving deltas:  81% (12708/15519)   
+Resolving deltas:  82% (12728/15519)   
+Resolving deltas:  83% (12899/15519)   
+Resolving deltas:  84% (13038/15519)   
+Resolving deltas:  85% (13231/15519)   
+Resolving deltas:  86% (13361/15519)   
+Resolving deltas:  87% (13504/15519)   
+Resolving deltas:  88% (13660/15519)   
+Resolving deltas:  89% (13812/15519)   
+Resolving deltas:  90% (13972/15519)   
+Resolving deltas:  91% (14124/15519)   
+Resolving deltas:  92% (14304/15519)   
+Resolving deltas:  93% (14434/15519)   
+Resolving deltas:  94% (14700/15519)   
+Resolving deltas:  95% (14866/15519)   
+Resolving deltas:  96% (14939/15519)   
+Resolving deltas:  97% (15055/15519)   
+Resolving deltas:  98% (15210/15519)   
+Resolving deltas:  99% (15367/15519)   
+Resolving deltas: 100% (15519/15519)   
+Resolving deltas: 100% (15519/15519), done.
+Checking connectivity... done.
+Submodule path 'integrations/appsignal-ruby': checked out '12c5d2b8ea86b4b2d21d068733cf8ba6e0395235'
+OK
+./bin/docker_test prepare:integration ruby
+
+Preparing integration test environment for 'ruby'
+
+
+bundle install --without packaging
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+[33m[DEPRECATED] The `--without` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local without 'packaging'`, and stop using this flag[0m
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Using rake 13.0.6
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Using rack 2.2.3
+Using appsignal 3.0.27 from source at `integrations/appsignal-ruby` and installing its executables
+Using aws-eventstream 1.2.0
+Using aws-sigv4 1.4.0
+Using jmespath 1.5.0
+Using aws-sdk-core 2.11.632
+Using aws-sdk-resources 2.11.632
+Using aws-sdk 2.11.632
+Using bundler 2.2.16
+Using coderay 1.1.3
+Using daemons 1.4.1
+Using diff-lcs 1.5.0
+Using unf_ext 0.0.8
+Using unf 0.1.4
+Using domain_name 0.5.20190701
+Using ffi 1.15.5
+Using get_process_mem 0.2.7
+Using google-protobuf 3.19.3 (x86_64-linux)
+Using highline 1.6.20
+Using http-accept 1.7.0
+Using http-cookie 1.0.4
+Using json_pure 1.8.1
+Using knapsack 4.0.0
+Using method_source 1.0.0
+Using mime-types-data 3.2022.0105
+Using mime-types 3.4.1
+Using ruby2_keywords 0.0.5
+Using mustermann 1.1.1
+Using netrc 0.11.0
+Using rainbow 2.2.2
+Using rest-client 2.1.0
+Using thor 0.20.3
+Using package_cloud 0.3.08
+Using pry 0.14.1
+Using rack-protection 2.1.0
+Using rspec-support 3.10.3
+Using rspec-core 3.10.1
+Using rspec-expectations 3.10.2
+Using rspec-mocks 3.10.2
+Using rspec 3.10.0
+Using rspec-retry 0.6.2
+Using tilt 2.0.10
+Using sinatra 2.1.0
+Using statsd-instrument 3.1.2
+Using webrick 1.7.0
+[32mBundle complete! 14 Gemfile dependencies, 46 gems now installed.[0m
+[32mGems in the group 'packaging' were not installed.[0m
+[32mBundled gems are installed into `/tmp/_appsignal_agent/bundle`[0m
+
+Running version checks
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Installing Rust version
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:29: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:30: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Running command (lib/tasks/build.rake:142:in `install_rust_version'):
+[33m[DEPRECATED] `Bundler.with_clean_env` has been deprecated in favor of `Bundler.with_unbundled_env`. If you instead want the environment before bundler was originally loaded, use `Bundler.with_original_env` (called at /home/appsignal/appsignal-agent/lib/cli.rb:13)[0m
++ rustup override set 1.53.0
+[1minfo: (B[musing existing install for '1.53.0-x86_64-unknown-linux-gnu'
+[1minfo: (B[moverride toolchain for '/home/appsignal/appsignal-agent' set to '1.53.0-x86_64-unknown-linux-gnu'
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Older Rust versions found
+Removing if any
+OK
+CI_NODE_TOTAL=$SEMAPHORE_JOB_COUNT CI_NODE_INDEX=`expr $SEMAPHORE_JOB_INDEX - 1` ./bin/docker_test integration ruby
+
 bundle exec rake integrations:ruby:install
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
@@ -60,3 +1720,1023 @@ spec/integration/opentelemetry_spec.rb
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+Knapsack adapter is off!
+[2022-06-24 08:34:55] INFO  WEBrick 1.7.0
+[2022-06-24 08:34:55] INFO  ruby 2.7.1 (2020-03-31) [x86_64-linux-gnu]
+== Sinatra (v2.1.0) has taken the stage on 4567 for development with backup from WEBrick
+[2022-06-24 08:34:55] INFO  WEBrick::HTTPServer#start: pid=1020 port=4567
+
+Push api responses
+127.0.0.1 - - [24/Jun/2022:08:35:01 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 500 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:35:06 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 500 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24 08:35:06] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:8 
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `eof?'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `run'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [24/Jun/2022:08:35:11 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+127.0.0.1 - - [24/Jun/2022:08:35:11 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24 08:35:11] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:9 
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `eof?'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `run'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/server.rb:310:in `block in start_thread'
+[2022-06-24 08:35:11] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:8 
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `eof?'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `run'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/server.rb:310:in `block in start_thread'
+127.0.0.1 - - [24/Jun/2022:08:35:11 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m  retries posting a payload if the push api is down[0m
+127.0.0.1 - - [24/Jun/2022:08:35:18 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 400 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:35:23 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+127.0.0.1 - - [24/Jun/2022:08:35:28 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m  does not retry posting a payload if the push api returns 400[0m
+127.0.0.1 - - [24/Jun/2022:08:35:35 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 401 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24 08:35:35] ERROR Errno::ECONNRESET: Connection reset by peer @ io_fillbuf - fd:10 
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `eof?'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/httpserver.rb:82:in `run'
+	/tmp/_appsignal_agent/bundle/ruby/2.7.0/gems/webrick-1.7.0/lib/webrick/server.rb:310:in `block in start_thread'
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:35:40 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+127.0.0.1 - - [24/Jun/2022:08:35:45 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m  does not retry posting a payload if the push api returns 401[0m
+127.0.0.1 - - [24/Jun/2022:08:35:52 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 413 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:35:57 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+127.0.0.1 - - [24/Jun/2022:08:36:02 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m  does not retry posting a payload if the push api returns 413[0m
+127.0.0.1 - - [24/Jun/2022:08:36:09 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 500 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+[32m  stores the payload on disk[0m
+
+Host metrics data collection disabled
+  when it has been disabled manually
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:37:20 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m    should not collect host metrics[0m
+  when the app is running on Heroku
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Initializing appsignal extension ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: false, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("web.1"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: Stdout, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: Some("heroku"), process_name: "spec/integration/runners/ruby/host_metrics.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: true, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 65, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (1731674121134446580)
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Initializing extension handler without app revision
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Initialized appsignal extension
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Initializing worker
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start in http_request at 1656059841638
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start event
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start event
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish event render_template.action_view - app/views/homepage/some_long_template_name.html.erb with duration of 10273
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start event
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish event render_template.action_view - app/views/homepage/some_long_template_name.html.erb with duration of 2639
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start event
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish event render_template.action_view - app/views/homepage/some_long_template_name.html.erb with duration of 2128
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start event
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish event render_template.action_view - app/views/homepage/some_long_template_name.html.erb with duration of 2035
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Start event
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish event render_template.action_view - app/views/homepage/some_long_template_name.html.erb with duration of 2109
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish event process_action.action_controller -  with duration of 1159603
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Set action HomeController#show
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Finish with duration of 1189623
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Set sample data params: {"action":"show","controller":"HomeController","id":1}
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Set sample data environment: {}
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Set sample data tags: {}
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Set sample data breadcrumbs: []
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: transaction[transaction_efb04bb5-cc3a-4c6f-8e19-31707ea4b053]: Complete
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: Writing transaction in http_request to agent
+
+[2022-06-24T08:37:21 (extension) #3918][Trace] appsignal: Adding distribution value: "{"__name__":"process_rss","hostname":"web.1","process_name":"spec/integration/runners/ruby/host_metrics.rb"}" with value: 41272
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Establishing new agent connection
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Changing permissions of pidfile "/tmp/appsignaltest/app/shared/appsignal/agent.lock" from 100644 to 100666
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Boot check: New lock file
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Booting agent with Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: false, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("web.1"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: Stdout, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: Some("heroku"), process_name: "spec/integration/runners/ruby/host_metrics.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: true, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 65, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" }
+
+[2022-06-24T08:37:21 (extension) #3918][Debug] appsignal: Booted appsignal-agent
+
+[2022-06-24T08:37:22 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:23 (extension) #3918][Debug] appsignal: Establishing new agent connection
+
+[2022-06-24T08:37:23 (extension) #3918][Debug] appsignal: Boot check: Agent running with wanted config hash 1731674121134446580
+
+[2022-06-24T08:37:23 (extension) #3918][Debug] appsignal: Connecting to agent (attempt 0)
+
+[2022-06-24T08:37:23 (extension) #3918][Debug] appsignal: Connected to agent, 10 payloads in queue
+
+[2022-06-24T08:37:23 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:24 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:25 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:26 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:27 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:29 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:30 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:31 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:32 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:33 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:34 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:35 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:36 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:36 (extension) #3918][Debug] appsignal: Extension running: 11 new payloads processed, 0 payloads in queue
+
+[2022-06-24T08:37:37 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:38 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:39 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:40 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:41 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:42 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:44 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:45 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:46 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:47 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:48 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:49 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:50 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:51 (extension) #3918][Debug] appsignal: Extension running: 1 new payloads processed, 1 payloads in queue
+
+[2022-06-24T08:37:51 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:53 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:54 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:55 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:56 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:57 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:58 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:37:59 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:00 (extension) #3918][Trace] appsignal: Adding distribution value: "{"__name__":"ruby_vm","metric":"class_serial"}" with value: 33043
+
+[2022-06-24T08:38:00 (extension) #3918][Trace] appsignal: Adding distribution value: "{"__name__":"ruby_vm","metric":"global_constant_state"}" with value: 3871
+
+[2022-06-24T08:38:00 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:02 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:03 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:04 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:05 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:06 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:06 (extension) #3918][Debug] appsignal: Extension running: 3 new payloads processed, 0 payloads in queue
+
+[2022-06-24T08:38:07 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:08 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:09 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:10 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:12 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:13 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:14 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:15 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:16 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:17 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:18 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:19 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:20 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:21 (extension) #3918][Debug] appsignal: Extension running: 1 new payloads processed, 0 payloads in queue
+
+[2022-06-24T08:38:21 (extension) #3918][Trace] appsignal: Adding distribution value: "{"__name__":"process_rss","hostname":"web.1","process_name":"spec/integration/runners/ruby/host_metrics.rb"}" with value: 41300
+
+[2022-06-24T08:38:22 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:23 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:24 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:25 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:26 (extension) #3918][Debug] appsignal: Shutting down extension
+
+[2022-06-24T08:38:26 (extension) #3918][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:38:26 (extension) #3918][Debug] appsignal: Connection closed, shutting down extension worker. 3 payloads processed since last debug lock tick
+
+[2022-06-24T08:38:26 (extension) #3918][Debug] appsignal: Worker thread exited
+
+[2022-06-24T08:37:21 (process) #3918][DEBUG] appsignal: Starting appsignal
+[2022-06-24T08:37:21 (process) #3918][INFO] appsignal: Starting AppSignal 3.0.27 (spec/integration/runners/ruby/host_metrics.rb, Ruby 2.7.1, x86_64-linux-gnu)
+[2022-06-24T08:37:21 (process) #3918][DEBUG] appsignal: Installing mri hook
+[2022-06-24T08:37:21 (process) #3918][DEBUG] appsignal: Installing net_http hook
+[2022-06-24T08:37:21 (process) #3918][DEBUG] appsignal: Monitor transaction {} (spec helper)
+[2022-06-24T08:38:00 (process) #3918][DEBUG] appsignal: Initializing VM probe
+[2022-06-24T08:38:00 (process) #3918][DEBUG] appsignal: Gathering minutely metrics with 1 probes
+[2022-06-24T08:38:00 (process) #3918][DEBUG] appsignal: Gathering minutely metrics with 'mri' probe
+[2022-06-24T08:38:26 (process) #3918][DEBUG] appsignal: Stopping appsignal
+
+127.0.0.1 - - [24/Jun/2022:08:38:26 UTC] "POST /2/collect?hostname=web.1&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=web.1&api_key=push-api-key&app_name=AppName&environment=production
+[32m    should not collect host metrics[0m
+
+Host metrics data collection enabled
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:39:32 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m  collects the agent's memory[0m
+Log file not present when running expect_clean_worker_thread_exit
+[32m  collects cpu metrics[0m
+Log file not present when running expect_clean_worker_thread_exit
+[32m  collects the load average[0m
+Log file not present when running expect_clean_worker_thread_exit
+[32m  collects memory metrics[0m
+Log file not present when running expect_clean_worker_thread_exit
+[32m  collects disk usage metrics[0m
+Log file not present when running expect_clean_worker_thread_exit
+[32m  collects network traffic metrics[0m
+Log file not present when running expect_clean_worker_thread_exit
+[32m  collects process memory[0m
+
+Run in daemonized process
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:39:45 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m  monitors transactions[0m
+  when daemonizing with Daemon.run
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:39:57 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m    monitors transactions[0m
+  when daemonizing with Daemon.run_proc
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+log writing failed. closed stream
+
+127.0.0.1 - - [24/Jun/2022:08:40:08 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m    monitors transactions[0m
+
+Logger
+  without APPSIGNAL_LOG env variable
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+[32m    logs to file[0m
+  with APPSIGNAL_LOG=file
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+[32m    logs to file[0m
+  with APPSIGNAL_LOG=stdout
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+[2022-06-24T08:40:20 (process) #7488][DEBUG] appsignal: Starting appsignal
+[2022-06-24T08:40:20 (process) #7488][INFO] appsignal: Starting AppSignal 3.0.27 (spec/integration/runners/ruby/only_boot.rb, Ruby 2.7.1, x86_64-linux-gnu)
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Initializing appsignal extension ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: Stdout, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/only_boot.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 60, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (17062670864492482087)
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Initializing extension handler without app revision
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Initialized appsignal extension
+
+[2022-06-24T08:40:20 (process) #7488][DEBUG] appsignal: Installing mri hook
+[2022-06-24T08:40:20 (process) #7488][DEBUG] appsignal: Installing net_http hook
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Initializing worker
+
+[2022-06-24T08:40:20 (extension) #7488][Trace] appsignal: Adding distribution value: "{"__name__":"process_rss","hostname":"1a663b97881f","process_name":"spec/integration/runners/ruby/only_boot.rb"}" with value: 43140
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Establishing new agent connection
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Changing permissions of pidfile "/tmp/appsignaltest/app/shared/appsignal/agent.lock" from 100644 to 100666
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Boot check: New lock file
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Booting agent with Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: Stdout, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/only_boot.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 60, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" }
+
+[2022-06-24T08:40:20 (extension) #7488][Debug] appsignal: Booted appsignal-agent
+
+[2022-06-24T08:40:21 (extension) #7488][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:40:21 (extension) #7488][Debug] appsignal: Establishing new agent connection
+
+[2022-06-24T08:40:21 (extension) #7488][Debug] appsignal: Boot check: Agent running with wanted config hash 17062670864492482087
+
+[2022-06-24T08:40:22 (extension) #7488][Debug] appsignal: Connecting to agent (attempt 0)
+
+[2022-06-24T08:40:22 (extension) #7488][Debug] appsignal: Connected to agent, 9 payloads in queue
+
+[2022-06-24T08:40:22 (extension) #7488][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:40:23 (extension) #7488][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+
+[32m    logs extention to stdout and agent to file[0m
+  when the agent can't log to file
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+[2022-06-24T08:40:25 (process) #7627][WARN] appsignal: Unable to start logger with log path '/tmp/appsignaltest/app/shared/log/appsignal.log'.
+[2022-06-24T08:40:25 (process) #7627][WARN] appsignal: Permission denied @ rb_sysopen - /tmp/appsignaltest/app/shared/log/appsignal.log
+[2022-06-24T08:40:25 (process) #7627][DEBUG] appsignal: Starting appsignal
+[2022-06-24T08:40:25 (process) #7627][INFO] appsignal: Starting AppSignal 3.0.27 (spec/integration/runners/ruby/only_boot.rb, Ruby 2.7.1, x86_64-linux-gnu)
+WARNING: Could not initialize appsignal logger to '/tmp/appsignaltest/app/shared/log/appsignal.log' (as 1000/1000): Io(Os { code: 13, kind: PermissionDenied, message: "Permission denied" })
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Initializing appsignal extension ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: false, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/only_boot.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 60, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (1204849652238610621)
+
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Initializing extension handler without app revision
+
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Initialized appsignal extension
+
+[2022-06-24T08:40:25 (process) #7627][DEBUG] appsignal: Installing mri hook
+[2022-06-24T08:40:25 (process) #7627][DEBUG] appsignal: Installing net_http hook
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Initializing worker
+
+[2022-06-24T08:40:25 (extension) #7627][Trace] appsignal: Adding distribution value: "{"__name__":"process_rss","hostname":"1a663b97881f","process_name":"spec/integration/runners/ruby/only_boot.rb"}" with value: 43136
+
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Establishing new agent connection
+
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Boot check: New lock file
+
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Booting agent with Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: false, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/only_boot.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 60, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" }
+
+[2022-06-24T08:40:25 (extension) #7627][Debug] appsignal: Booted appsignal-agent
+
+[2022-06-24T08:40:26 (extension) #7627][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:40:26 (extension) #7627][Debug] appsignal: Establishing new agent connection
+
+[2022-06-24T08:40:26 (extension) #7627][Debug] appsignal: Boot check: Agent running with wanted config hash 1204849652238610621
+
+[2022-06-24T08:40:27 (extension) #7627][Debug] appsignal: Connecting to agent (attempt 0)
+
+[2022-06-24T08:40:27 (extension) #7627][Debug] appsignal: Connected to agent, 9 payloads in queue
+
+[2022-06-24T08:40:27 (extension) #7627][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+[2022-06-24T08:40:28 (extension) #7627][Trace] appsignal: Added 0 span batches to agent payload, 0 remaining in buffer
+
+
+[32m    starts, but doesn't log anywhere[0m
+  when log level is set to trace
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+[32m    does not log traces from external crates[0m
+
+Statsd metric collection
+  with flush interval 0.0
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:40:45 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+Runner #1
+Sudo: false
+Output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+Agent logs ("/tmp/appsignaltest/app/shared/log/appsignal.log"):
+# Logfile created on 2022-06-24 08:40:35 +0000 by logger.rb/v1.4.2
+[2022-06-24T08:40:35 (process) #7910][DEBUG] Starting appsignal
+[2022-06-24T08:40:35 (process) #7910][INFO] Starting AppSignal 3.0.27 (spec/integration/runners/ruby/statsd.rb, Ruby 2.7.1, x86_64-linux-gnu)
+[2022-06-24T08:40:35 (extension) #7910][Debug] Initializing appsignal extension ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/statsd.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 10, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (11251186211844240322)
+[2022-06-24T08:40:35 (extension) #7910][Debug] Initializing extension handler without app revision
+[2022-06-24T08:40:35 (extension) #7910][Debug] Initialized appsignal extension
+[2022-06-24T08:40:35 (process) #7910][DEBUG] Installing mri hook
+[2022-06-24T08:40:35 (process) #7910][DEBUG] Installing net_http hook
+[2022-06-24T08:40:35 (extension) #7910][Debug] Initializing worker
+[2022-06-24T08:40:35 (extension) #7910][Trace] Adding distribution value: "{"__name__":"process_rss","hostname":"1a663b97881f","process_name":"spec/integration/runners/ruby/statsd.rb"}" with value: 41440
+[2022-06-24T08:40:35 (extension) #7910][Debug] Establishing new agent connection
+[2022-06-24T08:40:35 (extension) #7910][Debug] Changing permissions of pidfile "/tmp/appsignaltest/app/shared/appsignal/agent.lock" from 100644 to 100666
+[2022-06-24T08:40:35 (extension) #7910][Debug] Boot check: New lock file
+[2022-06-24T08:40:35 (extension) #7910][Debug] Booting agent with Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/statsd.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 10, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" }
+[2022-06-24T08:40:35 (agent) #7923][Debug] Booting appsignal-agent
+[2022-06-24T08:40:35 (extension) #7910][Debug] Booted appsignal-agent
+[2022-06-24T08:40:35 (agent) #7924][Debug] Starting appsignal-agent in daemonized mode
+[2022-06-24T08:40:35 (agent) #7924][Info] Listening on /tmp/appsignaltest/app/shared/appsignal/agent.socket
+[2022-06-24T08:40:35 (agent) #7924][Info] Started Statsd UDP server on 127.0.0.1:8125
+[2022-06-24T08:40:35 (agent) #7924][Info] Started appsignal-agent ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/statsd.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 10, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (11251186211844240322)
+[2022-06-24T08:40:35 (agent) #7924][Info] Started TCP server on 127.0.0.1:8099
+[2022-06-24T08:40:35 (agent) #7924][Debug] Starting transmitter
+[2022-06-24T08:40:35 (agent) #7924][Debug] Adding CA file /home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem
+[2022-06-24T08:40:35 (agent) #7924][Debug] Collecting host metrics for machine
+[2022-06-24T08:40:35 (agent) #7924][Debug] Starting host metric collection for 1656060000
+[2022-06-24T08:40:35 (agent) #7924][Debug] Load average 0.21
+[2022-06-24T08:40:35 (agent) #7924][Debug] Memory total: 3931.70703125mb, used: 572.23046875mb, swap_total: 242.99609375mb, swap_used: 0.51171875mb
+[2022-06-24T08:40:35 (agent) #7924][Debug] add_pem_file processed 138 valid and 0 invalid certs
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for / is 46%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /dev is 0%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /sys/fs/cgroup is 0%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /dev/shm is 0%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /tmp/agent-temp-directory is 64%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /etc/hosts is 46%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /run/docker.sock is 2%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /proc/acpi is 0%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /proc/scsi is 0%
+[2022-06-24T08:40:35 (agent) #7924][Debug] Disk usage for /sys/firmware is 0%
+[2022-06-24T08:40:35 (agent) #7924][Debug] No disk IO stats measurement present, not adding stats
+[2022-06-24T08:40:35 (agent) #7924][Debug] Sending host metrics for 1656060000 to agent worker
+[2022-06-24T08:40:35 (agent) #7924][Debug] Adding 20 incoming host metrics to aggregator
+[2022-06-24T08:40:36 (extension) #7910][Trace] Added 0 span batches to agent payload, 0 remaining in buffer
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "gauge", tags: None, metric: Gauge(Gauge { value: 2.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (agent) #7924][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:40:36 (extension) #7910][Debug] Establishing new agent connection
+[2022-06-24T08:40:36 (extension) #7910][Debug] Boot check: Agent running with wanted config hash 11251186211844240322
+[2022-06-24T08:40:36 (extension) #7910][Debug] Connecting to agent (attempt 0)
+[2022-06-24T08:40:36 (extension) #7910][Debug] Connected to agent, 9 payloads in queue
+[2022-06-24T08:40:36 (agent) #7924][Debug] Registered connection, 1 connections open
+[2022-06-24T08:40:37 (extension) #7910][Trace] Added 0 span batches to agent payload, 0 remaining in buffer
+[2022-06-24T08:40:37 (process) #7910][DEBUG] Stopping appsignal
+[2022-06-24T08:40:37 (extension) #7910][Debug] Shutting down extension
+[2022-06-24T08:40:37 (extension) #7910][Trace] Added 0 span batches to agent payload, 0 remaining in buffer
+[2022-06-24T08:40:37 (agent) #7924][Debug] Client 1 is shutting down, closing connection
+[2022-06-24T08:40:37 (agent) #7924][Debug] Closed connection opened at 1656060036, 0 connections open
+[2022-06-24T08:40:37 (extension) #7910][Debug] Connection closed, shutting down extension worker. 11 payloads processed since last debug lock tick
+[2022-06-24T08:40:37 (extension) #7910][Debug] Worker thread exited
+[2022-06-24T08:40:45 (agent) #7924][Debug] Transmitting environment_metadata: 19
+[2022-06-24T08:40:45 (agent) #7924][Debug] Transmitting aggregator with 0 transactions, 0 span batches 8 metrics, 20 host metrics
+[2022-06-24T08:40:45 (agent) #7924][Debug] Transmitting body of 998 bytes
+[2022-06-24T08:40:45 (agent) #7924][Debug] connecting to localhost:4567 at 127.0.0.1:4567
+[2022-06-24T08:40:45 (agent) #7924][Debug] created stream: TcpStream { addr: 127.0.0.1:59570, peer: 127.0.0.1:4567, fd: 18 }
+[2022-06-24T08:40:45 (agent) #7924][Info] sending request POST http://localhost:4567/2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24T08:40:45 (agent) #7924][Debug] writing prelude: POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1
+Host: localhost:4567
+User-Agent: appsignal-agent/1.0
+Accept: */*
+Content-Type: application/x-protobuf
+Content-Encoding: deflate
+Content-Length: 998
+
+
+[2022-06-24T08:40:45 (agent) #7924][Debug] response 200 to POST http://localhost:4567/2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24T08:40:45 (agent) #7924][Debug] Cleaning queued payload storage
+[2022-06-24T08:40:45 (agent) #7924][Debug] dropping stream: TcpStream { addr: 127.0.0.1:59570, peer: 127.0.0.1:4567, fd: 18 }
+[2022-06-24T08:40:45 (agent) #7924][Debug] Agent received exit signal 3, shutting down
+[2022-06-24T08:40:46 (agent) #7924][Info] Exit signal received, agent exiting
+[2022-06-24T08:40:46 (agent) #7924][Debug] Shutting down, no open connections
+[2022-06-24T08:40:46 (agent) #7924][Debug] Shutting down socket handler event loop
+[2022-06-24T08:40:46 (agent) #7924][Debug] Exiting socket worker thread
+[2022-06-24T08:40:46 (agent) #7924][Debug] Shutting down agent event loop, 10 payloads processed since last debug log tick
+[2022-06-24T08:40:46 (agent) #7924][Debug] Exiting agent worker thread
+[2022-06-24T08:40:46 (agent) #7924][Debug] Shutting down transmitter thread
+[2022-06-24T08:40:46 (agent) #7924][Debug] Exiting appsignal-agent
+
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:40:57 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m    collects metrics received via statsd[0m
+      
+1st Try error in ./spec/integration/statsd_spec.rb:19:
+expected: not nil
+     got: nil
+      
+RSpec::Retry: 2nd try ./spec/integration/statsd_spec.rb:19
+  with flush interval 1.0
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:41:09 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+Runner #1
+Sudo: false
+Output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+Agent logs ("/tmp/appsignaltest/app/shared/log/appsignal.log"):
+# Logfile created on 2022-06-24 08:40:59 +0000 by logger.rb/v1.4.2
+[2022-06-24T08:40:59 (process) #8418][DEBUG] Starting appsignal
+[2022-06-24T08:40:59 (process) #8418][INFO] Starting AppSignal 3.0.27 (spec/integration/runners/ruby/statsd.rb, Ruby 2.7.1, x86_64-linux-gnu)
+[2022-06-24T08:40:59 (extension) #8418][Debug] Initializing appsignal extension ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/statsd.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 10, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (11251186211844240322)
+[2022-06-24T08:40:59 (extension) #8418][Debug] Initializing extension handler without app revision
+[2022-06-24T08:40:59 (extension) #8418][Debug] Initialized appsignal extension
+[2022-06-24T08:40:59 (process) #8418][DEBUG] Installing mri hook
+[2022-06-24T08:40:59 (process) #8418][DEBUG] Installing net_http hook
+[2022-06-24T08:40:59 (extension) #8418][Debug] Initializing worker
+[2022-06-24T08:40:59 (extension) #8418][Trace] Adding distribution value: "{"__name__":"process_rss","hostname":"1a663b97881f","process_name":"spec/integration/runners/ruby/statsd.rb"}" with value: 41440
+[2022-06-24T08:40:59 (extension) #8418][Debug] Establishing new agent connection
+[2022-06-24T08:40:59 (extension) #8418][Debug] Changing permissions of pidfile "/tmp/appsignaltest/app/shared/appsignal/agent.lock" from 100644 to 100666
+[2022-06-24T08:40:59 (extension) #8418][Debug] Boot check: New lock file
+[2022-06-24T08:40:59 (extension) #8418][Debug] Booting agent with Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/statsd.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 10, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" }
+[2022-06-24T08:40:59 (agent) #8449][Debug] Booting appsignal-agent
+[2022-06-24T08:40:59 (extension) #8418][Debug] Booted appsignal-agent
+[2022-06-24T08:40:59 (agent) #8450][Debug] Starting appsignal-agent in daemonized mode
+[2022-06-24T08:40:59 (agent) #8450][Info] Listening on /tmp/appsignaltest/app/shared/appsignal/agent.socket
+[2022-06-24T08:40:59 (agent) #8450][Info] Started Statsd UDP server on 127.0.0.1:8125
+[2022-06-24T08:40:59 (agent) #8450][Info] Started appsignal-agent ef4c068 (as 1000/1000) with config Config { active: true, agent_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/ext"), agent_standalone: false, app_name: Some("AppName"), app_path: Some("/tmp/appsignaltest/app/current"), app_revision: None, ca_file_path: Some("/home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem"), debug_logging: false, diagnose_mode: false, dns_servers: None, enable_host_metrics: true, enable_statsd: true, environment: "production", files_world_accessible: true, filter_parameters: Some(["filtered_param_key", "nested_filtered_param_key"]), filter_session_data: Some(["filtered_session_key", "nested_filtered_session_key"]), hostname: Some("1a663b97881f"), http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, language_integration_version: Some("ruby-3.0.27"), local_env: {}, log: File, log_level: Some("trace"), log_level_filter: Trace, log_file_path: Some("/tmp/appsignaltest/app/shared/log/appsignal.log"), platform: None, process_name: "spec/integration/runners/ruby/statsd.rb", push_api_endpoint: Url { scheme: "http", username: "", password: None, host: Some(Domain("localhost")), port: Some(4567), path: "/2/collect", query: None, fragment: None }, push_api_key: "push-api-key", role: None, running_in_container: false, send_environment_metadata: true, transaction_debug_mode: false, transmission_interval: 10, working_dir_path: "/tmp/appsignaltest/app/shared/appsignal" } (11251186211844240322)
+[2022-06-24T08:40:59 (agent) #8450][Info] Started TCP server on 127.0.0.1:8099
+[2022-06-24T08:40:59 (agent) #8450][Debug] Starting transmitter
+[2022-06-24T08:40:59 (agent) #8450][Debug] Adding CA file /home/appsignal/appsignal-agent/integrations/appsignal-ruby/resources/cacert.pem
+[2022-06-24T08:40:59 (agent) #8450][Debug] Collecting host metrics for machine
+[2022-06-24T08:40:59 (agent) #8450][Debug] Starting host metric collection for 1656060000
+[2022-06-24T08:40:59 (agent) #8450][Debug] Load average 0.14
+[2022-06-24T08:40:59 (agent) #8450][Debug] Memory total: 3931.70703125mb, used: 571.58203125mb, swap_total: 242.99609375mb, swap_used: 0.51171875mb
+[2022-06-24T08:40:59 (agent) #8450][Debug] add_pem_file processed 138 valid and 0 invalid certs
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for / is 46%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /dev is 0%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /sys/fs/cgroup is 0%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /dev/shm is 0%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /tmp/agent-temp-directory is 64%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /etc/hosts is 46%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /run/docker.sock is 2%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /proc/acpi is 0%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /proc/scsi is 0%
+[2022-06-24T08:40:59 (agent) #8450][Debug] Disk usage for /sys/firmware is 0%
+[2022-06-24T08:40:59 (agent) #8450][Debug] No disk IO stats measurement present, not adding stats
+[2022-06-24T08:40:59 (agent) #8450][Debug] Sending host metrics for 1656060000 to agent worker
+[2022-06-24T08:40:59 (agent) #8450][Debug] Adding 20 incoming host metrics to aggregator
+[2022-06-24T08:41:00 (extension) #8418][Trace] Added 0 span batches to agent payload, 0 remaining in buffer
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "gauge", tags: None, metric: Gauge(Gauge { value: 2.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "gauge_with_tags", tags: Some({"hostname": "frontend1"}), metric: Gauge(Gauge { value: 3.0, sample_rate: Some(0.9) }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter", tags: None, metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_key_value_tags", tags: Some({"hostname": "frontend1"}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "counter_with_only_key_tags", tags: Some({"important": ""}), metric: Counter(Counter { value: 1.0, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing", tags: None, metric: Timing(Timing { value: 2.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding statsd metric 'Message { name: "timing_with_tags", tags: Some({"hostname": "frontend1"}), metric: Timing(Timing { value: 3.55, sample_rate: None }) }' to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Starting host metric collection for 1656060060
+[2022-06-24T08:41:00 (agent) #8450][Debug] CPU user: 1.4986604, nice: 0, system: 2.4949765, idle: 95.50402, iowait: 0
+[2022-06-24T08:41:00 (agent) #8450][Debug] Load average 0.14
+[2022-06-24T08:41:00 (agent) #8450][Debug] Memory total: 3931.70703125mb, used: 572.80078125mb, swap_total: 242.99609375mb, swap_used: 0.51171875mb
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for / is 46%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /dev is 0%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /sys/fs/cgroup is 0%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /dev/shm is 0%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /tmp/agent-temp-directory is 64%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /etc/hosts is 46%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /run/docker.sock is 2%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /proc/acpi is 0%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /proc/scsi is 0%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk usage for /sys/firmware is 0%
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop2 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk IO for sdc read: 0mb, written: 0mb
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping sda2 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd8 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping dm-0 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd3 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd4 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop0 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop4 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd1 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd7 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd2 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping sda5 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd13 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd6 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd0 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping sda6 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping sdb1 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd12 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd14 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd0p1 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd15 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop1 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop7 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping sdc1 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd5 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop3 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop6 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk IO for sdb read: 0mb, written: 0mb
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping loop5 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd9 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd11 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping nbd10 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Disk IO for sda read: 0mb, written: 0mb
+[2022-06-24T08:41:00 (agent) #8450][Debug] Skipping sda1 for disk IO stats
+[2022-06-24T08:41:00 (agent) #8450][Debug] Network traffic for eth0 received: 0mb, transmitted: 0mb
+[2022-06-24T08:41:00 (agent) #8450][Debug] Adding 34 incoming host metrics to aggregator
+[2022-06-24T08:41:00 (agent) #8450][Debug] Sending host metrics for 1656060060 to agent worker
+[2022-06-24T08:41:00 (extension) #8418][Debug] Establishing new agent connection
+[2022-06-24T08:41:00 (extension) #8418][Debug] Boot check: Agent running with wanted config hash 11251186211844240322
+[2022-06-24T08:41:00 (extension) #8418][Debug] Connecting to agent (attempt 0)
+[2022-06-24T08:41:00 (extension) #8418][Debug] Connected to agent, 9 payloads in queue
+[2022-06-24T08:41:00 (agent) #8450][Debug] Registered connection, 1 connections open
+[2022-06-24T08:41:01 (process) #8418][DEBUG] Stopping appsignal
+[2022-06-24T08:41:01 (extension) #8418][Debug] Shutting down extension
+[2022-06-24T08:41:01 (extension) #8418][Trace] Added 0 span batches to agent payload, 0 remaining in buffer
+[2022-06-24T08:41:01 (agent) #8450][Debug] Client 1 is shutting down, closing connection
+[2022-06-24T08:41:01 (agent) #8450][Debug] Closed connection opened at 1656060060, 0 connections open
+[2022-06-24T08:41:01 (extension) #8418][Debug] Connection closed, shutting down extension worker. 11 payloads processed since last debug lock tick
+[2022-06-24T08:41:01 (extension) #8418][Debug] Worker thread exited
+[2022-06-24T08:41:09 (agent) #8450][Debug] Transmitting environment_metadata: 19
+[2022-06-24T08:41:09 (agent) #8450][Debug] Transmitting aggregator with 0 transactions, 0 span batches 9 metrics, 54 host metrics
+[2022-06-24T08:41:09 (agent) #8450][Debug] Transmitting body of 1192 bytes
+[2022-06-24T08:41:09 (agent) #8450][Debug] connecting to localhost:4567 at 127.0.0.1:4567
+[2022-06-24T08:41:09 (agent) #8450][Debug] created stream: TcpStream { addr: 127.0.0.1:59574, peer: 127.0.0.1:4567, fd: 17 }
+[2022-06-24T08:41:09 (agent) #8450][Info] sending request POST http://localhost:4567/2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24T08:41:09 (agent) #8450][Debug] writing prelude: POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1
+Host: localhost:4567
+User-Agent: appsignal-agent/1.0
+Accept: */*
+Content-Type: application/x-protobuf
+
+Content-Encoding: deflate
+Content-Length: 1192
+
+
+[2022-06-24T08:41:09 (agent) #8450][Debug] response 200 to POST http://localhost:4567/2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[2022-06-24T08:41:09 (agent) #8450][Debug] Cleaning queued payload storage
+[2022-06-24T08:41:09 (agent) #8450][Debug] dropping stream: TcpStream { addr: 127.0.0.1:59574, peer: 127.0.0.1:4567, fd: 17 }
+[2022-06-24T08:41:09 (agent) #8450][Debug] Agent received exit signal 3, shutting down
+[2022-06-24T08:41:10 (agent) #8450][Info] Exit signal received, agent exiting
+[2022-06-24T08:41:10 (agent) #8450][Debug] Shutting down, no open connections
+[2022-06-24T08:41:10 (agent) #8450][Debug] Shutting down socket handler event loop
+[2022-06-24T08:41:10 (agent) #8450][Debug] Exiting socket worker thread
+[2022-06-24T08:41:10 (agent) #8450][Debug] Shutting down agent event loop, 10 payloads processed since last debug log tick
+[2022-06-24T08:41:10 (agent) #8450][Debug] Exiting agent worker thread
+[2022-06-24T08:41:10 (agent) #8450][Debug] Shutting down transmitter thread
+[2022-06-24T08:41:10 (agent) #8450][Debug] Exiting appsignal-agent
+
+DEBUG: Runner output contained a warning or error.
+Runner output:
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+/usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
+
+127.0.0.1 - - [24/Jun/2022:08:41:21 UTC] "POST /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production HTTP/1.1" 200 8
+- -> /2/collect?hostname=1a663b97881f&api_key=push-api-key&app_name=AppName&environment=production
+[32m    collects metrics received via statsd[0m
+      
+1st Try error in ./spec/integration/statsd_spec.rb:19:
+expected: > 1
+     got:   1
+      
+RSpec::Retry: 2nd try ./spec/integration/statsd_spec.rb:19
+
+OpenTelemetry span import
+  with OpenTelemetry root span
+Log file not present when running expect_clean_worker_thread_exit
+[33m    collects imported opentelemetry spans (PENDING: Not implemented for Ruby)[0m
+== Sinatra has ended his set (crowd applauds)
+
+Pending: (Failures listed here are expected and do not affect your suite's status)
+[33m
+  1) OpenTelemetry span import with OpenTelemetry root span collects imported opentelemetry spans[0m
+     [36m# Not implemented for Ruby[0m
+[36m     # ./spec/integration/opentelemetry_spec.rb:7
+[0m
+[2022-06-24 08:41:22] INFO  going to shutdown ...
+
+Top 10 slowest examples (271.91 seconds, 70.3% of total time):
+[2022-06-24 08:41:22] INFO  WEBrick::HTTPServer#start done.
+  Host metrics data collection disabled when it has been disabled manually should not collect host metrics
+    [1m66.93[0m [1mseconds[0m ./spec/integration/host_metrics_collection_spec.rb:10
+  Host metrics data collection disabled when the app is running on Heroku should not collect host metrics
+    [1m65.84[0m [1mseconds[0m ./spec/integration/host_metrics_collection_spec.rb:25
+  Statsd metric collection with flush interval 0.0 collects metrics received via statsd
+    [1m23.79[0m [1mseconds[0m ./spec/integration/statsd_spec.rb:19
+  Statsd metric collection with flush interval 1.0 collects metrics received via statsd
+    [1m23.78[0m [1mseconds[0m ./spec/integration/statsd_spec.rb:19
+  Push api responses does not retry posting a payload if the push api returns 413
+    [1m16.89[0m [1mseconds[0m ./spec/integration/push_api_spec.rb:35
+  Push api responses retries posting a payload if the push api is down
+    [1m16.89[0m [1mseconds[0m ./spec/integration/push_api_spec.rb:11
+  Push api responses does not retry posting a payload if the push api returns 401
+    [1m16.89[0m [1mseconds[0m ./spec/integration/push_api_spec.rb:27
+  Push api responses does not retry posting a payload if the push api returns 400
+    [1m16.88[0m [1mseconds[0m ./spec/integration/push_api_spec.rb:19
+  Run in daemonized process monitors transactions
+    [1m12.08[0m [1mseconds[0m ./spec/integration/daemons_spec.rb:6
+  Run in daemonized process when daemonizing with Daemon.run_proc monitors transactions
+    [1m11.95[0m [1mseconds[0m ./spec/integration/daemons_spec.rb:45
+
+Top 7 slowest example groups:
+  Host metrics data collection disabled
+    [1m66.39[0m [1mseconds[0m average (132.78 seconds / 2 examples) ./spec/integration/host_metrics_collection_spec.rb:3
+  Statsd metric collection
+    [1m23.79[0m [1mseconds[0m average (47.59 seconds / 2 examples) ./spec/integration/statsd_spec.rb:3
+  Push api responses
+    [1m15.68[0m [1mseconds[0m average (78.42 seconds / 5 examples) ./spec/integration/push_api_spec.rb:3
+  Run in daemonized process
+    [1m11.98[0m [1mseconds[0m average (35.94 seconds / 3 examples) ./spec/integration/daemons_spec.rb:3
+  Host metrics data collection enabled
+    [1m9.59[0m [1mseconds[0m average (67.11 seconds / 7 examples) ./spec/integration/host_metrics_collection_spec.rb:41
+  Logger
+    [1m4.97[0m [1mseconds[0m average (24.83 seconds / 5 examples) ./spec/integration/logger_spec.rb:3
+  OpenTelemetry span import
+    [1m0.04228[0m [1mseconds[0m average (0.04228 seconds / 1 example) ./spec/integration/opentelemetry_spec.rb:3
+
+Finished in 6 minutes 27 seconds (files took 0.38548 seconds to load)
+[33m25 examples, 0 failures, 1 pending[0m
+
+OK
+export SEMAPHORE_JOB_RESULT=passed
+artifact push job spec/knapsack_report.json --expire-in 1d
+
+WARNING: The --expire-in flag is obsolete and will have no efffect.
+Use artifact retention policies to control the lifetime of artifacts.
+Docs: https://docs.semaphoreci.com/essentials/artifacts/#artifact-retention-policies
+
+[Jun 24 08:41:23.086] Successfully pushed artifact for current job.
+[Jun 24 08:41:23.087] * Local source: spec/knapsack_report.json.
+[Jun 24 08:41:23.087] * Remote destination: artifacts/jobs/6d737ffe-1655-4a96-890c-89160b323a41/knapsack_report.json.
