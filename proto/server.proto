@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package Api.Server;
+
+import "google/protobuf/timestamp.proto";
+option go_package = "github.com/hamir-suspect/grpc-client-go/pb";
+
+service Server {
+    rpc Create(CreateRequest) returns (CreateResponse);
+    rpc CreateNative(SomeMsg) returns (SomeMsg);
+}
+
+// msg two services have to exchange encrypted
+message SomeMsg {
+    enum Code {
+        OK = 0;
+        FAILED = 2;
+    }
+    string name = 1;
+    Code code = 2;
+    int32 number = 3;
+    google.protobuf.Timestamp timestamp = 4;
+}
+
+
+message CreateRequest {
+    string encrypted_value = 1;
+}
+
+message CreateResponse {
+    string encrypted_value = 1;
+}

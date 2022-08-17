@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package InternalApi;
+
+option go_package = "response_status";
+
+//
+// ResponseStatus of a RPC call.
+//
+// - code = either OK or BAD_PARAM
+//          - if resposnse is OK, the response is valid
+//          - if responnse is BAD_PARAM, the response can't be created,
+//               the caller should ignore the rest of the fields
+//
+// - message = The reason why a BAD_PARAM was returned.
+//
+// Example:
+//   code    = BAD_PARAM,
+//   message = 'Record with id 1212121 does not exists'.
+//
+message ResponseStatus {
+  enum Code {
+    OK = 0;
+    BAD_PARAM = 1;
+  }
+
+  Code code = 1;
+  string message = 2;
+}

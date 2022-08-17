@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package InternalApi;
+
+import "google/rpc/code.proto";
+
+//
+// Status of a RPC call.
+//
+// - code    = see google.rpc.Code
+//             Codes serve to determine result of Request processing and whether
+//             to interpret the other fields in Response
+// - message = developer-facing English message that helps developers
+//             *understand* and *resolve* the error
+//
+// Example:
+//   code    = NOT_FOUND,
+//   message = 'Record with id 1212121 not found'.
+//
+message Status {
+  google.rpc.Code code = 1;
+  string message = 2;
+}
